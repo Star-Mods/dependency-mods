@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Dependencies>
+        <Value>bnet:Void (Mod)/0.0/999,file:Mods\all-races-mods\dependencies\VoidMulti.SC2Mod</Value>
+        <Value>bnet:[AR2] Triggers/0.0/231104,file:Mods\all-races-mods\dependencies\Triggers.SC2Mod</Value>
+        <Value>bnet:[AR2] Scion/0.0/231108,file:Mods\all-races-mods\factions\Scion.SC2Mod</Value>
+        <Value>bnet:[AR2] Dragons/0.0/231106,file:Mods\all-races-mods\factions\Dragons.SC2Mod</Value>
+        <Value>bnet:[AR2] Hybrids/0.0/231107,file:Mods\all-races-mods\factions\Hybrids.SC2Mod</Value>
+        <Value>bnet:[AR2] UED/0.0/231111,file:Mods\all-races-mods\factions\UED.SC2Mod</Value>
+        <Value>bnet:[AR2] UPL/0.0/231113,file:Mods\all-races-mods\factions\UPL.SC2Mod</Value>
+        <Value>bnet:[AR2] Umojan/0.0/231112,file:Mods\all-races-mods\factions\Umojan.SC2Mod</Value>
+        <Value>bnet:[AR2] Synoid/0.0/231109,file:Mods\all-races-mods\factions\Synoid.SC2Mod</Value>
+    </Dependencies>
+</DocInfo>
