@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CTargetSortBehaviorCount id="TSStructureNeedsDefenders">
+        <WhichUnit Value="Target"/>
+        <Descending value="1"/>
+        <Behavior value="StructureNeedsDefenders"/>
+    </CTargetSortBehaviorCount>
+    <CTargetSortVital id="TSEnergyLargestFirst">
+        <Descending value="1"/>
+        <Vital value="Energy"/>
+    </CTargetSortVital>
+    <CTargetSortPriority id="TSPriorityTarget">
+        <WhichUnit Value="Target"/>
+    </CTargetSortPriority>
+    <CTargetSortVital id="TSShieldsLargestFirst">
+        <Descending value="1"/>
+        <Vital value="Shields"/>
+    </CTargetSortVital>
+    <CTargetSortValidator id="TSEnemy">
+        <Validator value="TargetIsEnemy"/>
+    </CTargetSortValidator>
+    <CTargetSortValidator id="TSInCombat">
+        <Validator value="TargetInCombatLong"/>
+    </CTargetSortValidator>
+    <CTargetSortValidator id="TSNeutral">
+        <Validator value="TargetIsNeutral"/>
+    </CTargetSortValidator>
+    <CTargetSortValidator id="TSPlayer">
+        <Validator value="TargetIsPlayer"/>
+    </CTargetSortValidator>
+
+</Catalog>

@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CAbilEffectInstant id="LoadingFooter">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoTooltipPriority value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CreditsName"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LoadingFooterExtra">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoTooltipPriority value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CreditsName"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget default="1" id="Reposition">
+        <?token id="Placement" type="CUnitLink"?>
+        <?token id="Unit" type="CUnitLink"?>
+        <?token id="Button" type="CButtonLink"?>
+        <SharedFlags index="DisableWhileDead" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge>
+                <CountMax value="60"/>
+                <CountStart value="60"/>
+                <CountUse value="4"/>
+                <Link value="Abil/Reposition"/>
+                <Location value="Player"/>
+                <TimeUse value="1.5"/>
+            </Charge>
+            <Cooldown Location="Unit" TimeUse="0.375"/>
+        </Cost>
+        <Placeholder value="##Unit##"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AINotifyEffect value=""/>
+        <ProducedUnitArray value="##Unit##"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="##Button##" Requirements="Reposition">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+        <PlaceUnit value="##Placement##"/>
+        <PrepEffect value="##Placement##"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget default="1" id="Place">
+        <?token id="Placement" type="CUnitLink"?>
+        <?token id="Unit" type="CUnitLink"?>
+        <?token id="Button" type="CButtonLink"?>
+        <?token id="Tier" type="CString" value="1"?>
+        <!--        <?token id="AutoCast" type="CString" value="0"?>-->
+        <!--        <?token id="Minerals" value="0"?>-->
+        <SharedFlags index="DisableWhileDead" value="0"/>
+        <PostEffectBehavior Behavior="##id##ChargeUsed" Count="1" Duration="0.0625">
+            <Flags index="UseDuration" value="1"/>
+        </PostEffectBehavior>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Location="Player"/>
+            <!--            <Resource index="Minerals" value="##Minerals##"/>-->
+        </Cost>
+        <Placeholder value="##Unit##"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <AINotifyEffect value=""/>
+        <ProducedUnitArray value="##Unit##"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="##Button##" Requirements="HasTier##Tier##"/>
+        <PlaceUnit value="##Placement##"/>
+        <PrepEffect value="##Placement##"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="Demolish">
+        <Effect index="0" value="Suicide"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="1"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Demolish">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+    <CAbilInventory id="InventoryUnit">
+        <TargetFilters value="Item;Ally,Neutral,Enemy"/>
+        <Range value="500"/>
+        <MaxDropRange value="500"/>
+        <CmdButtonArray index="Drop" Requirements="ImpossibleRequirement"/>
+        <CmdButtonArray index="Move" Requirements="ImpossibleRequirement"/>
+        <InfoArray>
+            <Classes value="UnitItem"/>
+        </InfoArray>
+    </CAbilInventory>
+    <CAbilInventory id="InventoryWorker">
+        <SharedFlags index="DisableWhileDead" value="0"/>
+        <CmdButtonArray index="Drop" Requirements="ImpossibleRequirement"/>
+        <CmdButtonArray index="Move" Requirements="ImpossibleRequirement"/>
+        <CmdButtonArray index="ItemCancel" Requirements="ImpossibleRequirement"/>
+        <CmdButtonArray index="PawnInstant" Requirements="ImpossibleRequirement"/>
+        <InfoArray Item="EmoteItem">
+            <Classes value="EmoteItem"/>
+        </InfoArray>
+        <InfoArray Item="SprayItem">
+            <Classes value="SprayItem"/>
+        </InfoArray>
+        <!--        <InfoArray Item="DecorationsContainerItem">-->
+        <!--            <Classes value="DecorationsContainer"/>-->
+        <!--        </InfoArray>-->
+    </CAbilInventory>
+    <CAbilEffectTarget id="UnitItemReposition">
+        <Effect index="0" value="UnitItemRepositionSet"/>
+        <Flags index="Smart" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="1.25"/>
+        </Cost>
+        <TargetFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Move"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ItemPickupSmartcast">
+        <Effect index="0" value="ItemPickupSmartcastSet"/>
+        <Flags index="Smart" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Item"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Move"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="StagingAreaWorkerZap">
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Range value="9"/>
+        <Arc value="360"/>
+        <AutoCastFilters value="Worker,Visible;Player,Ally,Neutral,Structure,Dead,Hidden,Summoned"/>
+        <AutoCastRange value="9"/>
+        <AutoCastValidatorArray value="HasWorkerSwappable"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MothershipCoreAttack"/>
+        <Cost>
+            <Cooldown TimeUse="1"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="StructureBirthZerg">
+        <Effect index="0" value="StructureBirthZergSetCast"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StructureBirthZerg"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="StructureBirthTerran">
+        <Effect index="0" value="StructureBirthTerranSetCast"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StructureBirthTerran"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="StructureBirthProtoss">
+        <Effect index="0" value="StructureBirthProtossSetCast"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StructureBirthProtoss"/>
+    </CAbilEffectTarget>
+    <CAbilAttack id="AttackObjective" parent="attack">
+        <Name value="Abil/Name/AttackObjective"/>
+        <CmdButtonArray index="Execute">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Towards">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Barrage">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <AcquireFilters value="-;Player,Ally,Neutral,Dead,Hidden,Invulnerable"/>
+        <MinAttackSpeedMultiplier value="0.125"/>
+    </CAbilAttack>
+    <CAbilMove id="MoveWorker" parent="move">
+        <Name value="Abil/Name/MoveWorker"/>
+    </CAbilMove>
+    <CAbilEffectTarget id="MutationStetapult">
+        <Effect index="0" value="MutationStetapultCreate"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="999"/>
+                <CountUse value="1"/>
+                <Location value="Player"/>
+                <TimeStart value="84"/>
+                <TimeUse value="84"/>
+            </Charge>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MutationStetapult" Requirements="MutationStetapult"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MutationRaidBoss">
+        <Effect index="0" value="MutationRaidBossCreate"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge>
+                <CountMax value="999"/>
+                <CountUse value="1"/>
+                <Location value="Player"/>
+                <TimeStart value="336"/>
+                <TimeUse value="336"/>
+            </Charge>
+            <Cooldown Link="Abil/MutationStetapult"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MutationRaidBoss" Requirements="MutationRaidBoss"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="IdleCheck">
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="1"/>
+        </Cost>
+        <AutoCastFilters value="Self,Visible;Ally,Neutral,Enemy"/>
+        <AutoCastRange value="1"/>
+        <AutoCastValidatorArray value="CasterHasNoOrders"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
+    </CAbilEffectInstant>
+    <CAbilSpecialize id="MercCampResearch">
+        <Activity value="UI/Researching"/>
+        <InfoArray index="Specialize1" Effect="MercCampPowerLevel1">
+            <Resource index="Minerals" value="100"/>
+            <Cooldown TimeUse="84"/>
+            <Button DefaultButtonFace="MercCampPowerLevel1" Requirements="MercCampPowerLevel1"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize2" Effect="MercCampPowerLevel2">
+            <Resource index="Minerals" value="150"/>
+            <Cooldown TimeUse="84"/>
+            <Button DefaultButtonFace="MercCampPowerLevel2" Requirements="MercCampPowerLevel2"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <InfoArray index="Specialize3" Effect="MercCampPowerLevel3">
+            <Resource index="Minerals" value="200"/>
+            <Cooldown TimeUse="84"/>
+            <Button DefaultButtonFace="MercCampPowerLevel3" Requirements="MercCampPowerLevel3"/>
+            <Flags index="AutoCast" value="1"/>
+        </InfoArray>
+        <Alert value="ResearchComplete"/>
+        <AbilSetId value="Research"/>
+    </CAbilSpecialize>
+    <CAbilEffectTarget id="TestKillTarget">
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="SprayItem" parent="SprayParent">
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="TransientPreferred" value="1"/>
+        <Cost index="0">
+            <Charge>
+                <CountMax value="999"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <Link value="Spray"/>
+                <Location value="Player"/>
+                <TimeStart value="280"/>
+                <TimeUse value="280"/>
+            </Charge>
+        </Cost>
+        <Range index="0" value="500"/>
+        <Arc value="360"/>
+        <PlaceUnit value="SprayItemPlace"/>
+        <CmdButtonArray index="Execute" Requirements="AnyUnit"/>
+        <EditorCategories value="AbilityorEffectType:Units,Race:Neutral"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="TacNukeStrike">
+        <CmdButtonArray index="Execute" Requirements="ImpossibleRequirement"/>
+        <EditorCategories value="Race:Neutral,AbilityorEffectType:Units"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="SkinSystemOpen">
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SkinSystemOpen" Requirements="SkinSystem"/>
+    </CAbilEffectInstant>
+    <CAbilSpecialize id="SkinSpecializePremium">
+        <InfoArray index="Specialize1" Effect="SkinBiomassSetStart">
+            <Cooldown Link="Abil/SkinSpecialize1" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinBiomass" Requirements="SkinBiomass">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize2" Effect="SkinCybrosSetStart">
+            <Cooldown Link="Abil/SkinSpecialize2" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinCybros" Requirements="SkinCybros">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize3" Effect="SkinHologramSetStart">
+            <Cooldown Link="Abil/SkinSpecialize3" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinHologram" Requirements="SkinHologram">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize4" Effect="SkinMineralSetStart">
+            <Cooldown Link="Abil/SkinSpecialize4" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinMineral" Requirements="SkinMineral">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize5" Effect="SkinPsionicSetStart">
+            <Cooldown Link="Abil/SkinSpecialize5" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinPsionic" Requirements="SkinPsionic">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize6" Effect="SkinRedstoneSetStart">
+            <Cooldown Link="Abil/SkinSpecialize6" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinRedstone" Requirements="SkinRedstone">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize7" Effect="SkinSolariteSetStart">
+            <Cooldown Link="Abil/SkinSpecialize7" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinSolarite" Requirements="SkinSolarite">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize8" Effect="SkinVoidSetStart">
+            <Cooldown Link="Abil/SkinSpecialize8" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinVoid" Requirements="SkinVoid">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize9" Effect="SkinShadowSetStart">
+            <Cooldown Link="Abil/SkinSpecialize9" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinShadow" Requirements="SkinShadow">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize10" Effect="SkinSepiaSetStart">
+            <Cooldown Link="Abil/SkinSpecialize10" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinSepia" Requirements="SkinSepia">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize11" Effect="SkinJadeSetStart">
+            <Cooldown Link="Abil/SkinSpecialize11" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinJade" Requirements="SkinJade">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize12" Effect="SkinSnowSetStart">
+            <Cooldown Link="Abil/SkinSpecialize12" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinSnow" Requirements="SkinSnow">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize13" Effect="SkinHighlightSetStart">
+            <Cooldown Link="Abil/SkinSpecialize13" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinHighlight" Requirements="SkinHighlight">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <InfoArray index="Specialize19" Effect="WorkerAuraAvailableUsed">
+            <Cooldown TimeUse="1"/>
+            <Button DefaultButtonFace="WorkerAuraAvailable" Requirements="WorkerAuraAvailable"/>
+        </InfoArray>
+        <InfoArray index="Specialize20" Effect="SkinRemoveAll">
+            <Cooldown Link="Abil/SkinSpecialize20" TimeUse="1"/>
+            <Button DefaultButtonFace="SkinRemove" Requirements="SkinRemove">
+                <Flags index="ToSelection" value="1"/>
+            </Button>
+        </InfoArray>
+        <Alert value=""/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="UnitOrderQueue" value="1"/>
+        <Activity value="UI/None"/>
+    </CAbilSpecialize>
+    <CAbilEffectTarget id="HybridDominatorPsiStorm" parent="PsiStorm">
+        <Name value="Abil/Name/HybridDominatorPsiStorm"/>
+        <CmdButtonArray index="Execute" Requirements=""/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="NeutralScan">
+        <Flags index="AbortOnAllianceChange" value="0"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Flags index="UpdateChargesOnLevelChange" value="0"/>
+        <Cost>
+            <Resource index="Minerals" value="25"/>
+            <Cooldown TimeUse="30"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CursorEffect value="NeutralScan"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Scan" Requirements="ScanUse"/>
+    </CAbilEffectTarget>
+    <CAbilRally id="RallyWaveUnit">
+        <EditorCategories value="Race:Neutral,AbilityorEffectType:Structures"/>
+    </CAbilRally>
+    <CAbilMove id="MoveWaveUnit">
+        <OrderArray index="0">
+            <DisplayType value="Move"/>
+            <Color value="255,255,0,0"/>
+            <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+            <LineTexture value="Assets\Textures\black.dds"/>
+        </OrderArray>
+        <OrderArray index="1" removed="1"/>
+        <CmdButtonArray index="Move" Requirements="AllowMoveWaveUnit">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Patrol" Requirements="ImpossibleRequirement">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="HoldPos" Requirements="ImpossibleRequirement">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="AcquireMove" Requirements="ImpossibleRequirement">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Turn" Requirements="ImpossibleRequirement">
+            <Flags index="IgnoreUser" value="1"/>
+        </CmdButtonArray>
+        <FleeRange value="5"/>
+        <FleeTime value="5"/>
+        <FollowRangeSlop value="1"/>
+        <FollowAcquireRange value="6"/>
+        <MinPatrolDistance value="1"/>
+        <FollowFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <MoveFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <Flags index="ShowIfImmobile" value="1"/>
+    </CAbilMove>
+    <CAbilStop id="StopWaveUnit">
+        <OrderArray index="0">
+            <DisplayType value="Confirm"/>
+            <Color value="255,255,0,0"/>
+            <Model value="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3"/>
+            <LineTexture value="Assets\Textures\black.dds"/>
+        </OrderArray>
+        <AbilSetId value=""/>
+        <CmdButtonArray index="HoldFire" DefaultButtonFace="HoldFireSpecial"/>
+    </CAbilStop>
+    <CAbilInteract id="TowerCaptureWorker">
+        <CmdButtonArray index="Designate" DefaultButtonFace="Move"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="Exclusive" value="1"/>
+        <Flags index="SameCliffLevel" value="1"/>
+        <Flags index="ShareVision" value="1"/>
+        <Range value="5"/>
+        <TargetFilters value="Worker;Self,Structure,Missile,Uncommandable,Buried,Dead,Hidden"/>
+        <AutoCastRange value="5"/>
+    </CAbilInteract>
+    <CAbilEffectInstant id="Sell50">
+        <AbilSetId value="SellPartial"/>
+        <Effect index="0" value="SuicideBlast"/>
+        <PrepTime value="5"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <CancelableArray index="Prep" value="1"/>
+        <ProgressButtonArray index="Prep" value="Sell50"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Sell50" Requirements="UseSell">
+            <Flags index="ShowInGlossary" value="0"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <PrepEffect value="IsSelling"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Sell60">
+        <AbilSetId value="SellPartial"/>
+        <Effect index="0" value="SuicideBlast"/>
+        <PrepTime value="5"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <CancelableArray index="Prep" value="1"/>
+        <ProgressButtonArray index="Prep" value="Sell60"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Sell60" Requirements="UseSell">
+            <Flags index="ShowInGlossary" value="0"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <PrepEffect value="IsSelling"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Sell70">
+        <AbilSetId value="SellPartial"/>
+        <Effect index="0" value="SuicideBlast"/>
+        <PrepTime value="5"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <CancelableArray index="Prep" value="1"/>
+        <ProgressButtonArray index="Prep" value="Sell70"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Sell70" Requirements="UseSell">
+            <Flags index="ShowInGlossary" value="0"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <PrepEffect value="IsSelling"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellFull">
+        <AbilSetId value="SellFull"/>
+        <Effect index="0" value="SellFullSetCast"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellFull" Requirements="UseSellFull">
+            <Flags index="ShowInGlossary" value="0"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="1"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellNone">
+        <AbilSetId value="SellPartial"/>
+        <Effect index="0" value="SuicideBlast"/>
+        <PrepTime value="5"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <CancelableArray index="Prep" value="1"/>
+        <ProgressButtonArray index="Prep" value="SellNone"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellNone" Requirements="UseSellNone">
+            <Flags index="ShowInGlossary" value="0"/>
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+    </CAbilEffectInstant>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Catalog>

@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUpgrade default="1" id="HiddenUpgrade">
+        <ScoreCount value="TotalMissionScore"/>
+        <ScoreValue value="TotalMissionScore"/>
+        <EditorCategories value="UpgradeType:Hidden"/>
+        <LeaderAlias value=""/>
+    </CUpgrade>
+    <CUpgrade id="GameModeStandard" parent="HiddenUpgrade"/>
+    <CUpgrade id="GameModeSwitch" parent="HiddenUpgrade"/>
+    <CUpgrade id="GameModeHeroicCommanders" parent="HiddenUpgrade"/>
+    <CUpgrade id="GameModeGear" parent="HiddenUpgrade"/>
+    <CUpgrade id="GameModeSabotage" parent="HiddenUpgrade"/>
+    <CUpgrade id="GameModeTutorial" parent="HiddenUpgrade"/>
+    <CUpgrade id="ImpossibleUpgrade"/>
+    <CUpgrade id="AreaWeatherMineralWind" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-crystalforgelevel2.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherEnergyWind" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-leylinesensitivity.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherVoidWind" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-symbiosis.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherSunrays" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-holylight.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherAcidRain" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-rainofchaos.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherLightSnow" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-icefortress.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherLightRain" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-tornado.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherNone" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-command-cancel_nobg.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherAshWind" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-immolation.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherBloodshardWind" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gemred4.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaWeatherIcySnow" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-frostnova.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairFractured" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-fractured.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairPurifier" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gemyellow4.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairSlayn" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gemred3.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairMansion" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gemorange4.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairVoid" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gempurple4.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairDOM" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gemorange2.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairProtoss" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gemblue4.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairDefault" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\tip_flair.dds"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="AreaFlairXelnaga" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-item-gemgreen4.dds"/>
+        <TechAliasArray value="Alias_AreaFlair_NotDefault"/>
+        <AffectedUnitArray value="StagingAreaBorderDash"/>
+        <AffectedUnitArray value="StagingAreaBorderGrid"/>
+        <AffectedUnitArray value="StagingAreaTeamColor"/>
+        <AffectedUnitArray value="SpawnArea1x1"/>
+        <AffectedUnitArray value="SpawnArea2x2"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteCooldownSmall" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteCooldownSmallx10" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteDurationSmall" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteDurationSmallx10" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryPassiveExperienceSmall" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryPassiveExperienceSmallx10" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryRefinerySizeSmall" parent="HiddenUpgrade">
+        <AffectedUnitArray value="WorkerProtoss"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryRefinerySizeSmallx10" parent="HiddenUpgrade">
+        <AffectedUnitArray value="WorkerProtoss"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySprayCooldownSmall" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySprayCooldownSmallx10" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySpraySizeSmall" parent="HiddenUpgrade">
+        <EffectArray Reference="Actor,SprayDecal,Scale" Value="0.000500"/>
+        <AffectedUnitArray value="SprayDecal"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySpraySizeSmallx10" parent="HiddenUpgrade">
+        <EffectArray Reference="Actor,SprayDecal,Scale" Value="0.005000"/>
+        <AffectedUnitArray value="SprayDecal"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSizeSmall" parent="HiddenUpgrade">
+        <AffectedUnitArray value="WorkerProtoss"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSizeSmallx10" parent="HiddenUpgrade">
+        <AffectedUnitArray value="WorkerProtoss"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSpeedSmall" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,MasteryWorkerSpeed,Modification.MoveSpeedBonus" Value="0.00625"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSpeedSmallx10" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,MasteryWorkerSpeed,Modification.MoveSpeedBonus" Value="0.0625"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryXPMultiplierSmall" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryXPMultiplierSmallx10" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MutationSimplified" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-weaken.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationExpandedArmaments" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-volatilebarrier.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="NotYetImplemented" parent="HiddenUpgrade">
+        <EditorCategories value=""/>
+    </CUpgrade>
+    <CUpgrade id="StarlightSwitch">
+        <EditorCategories value=""/>
+    </CUpgrade>
+    <CUpgrade id="MutationAlphaTimeline" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-10-acceleratedtech.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationKitchenSink" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-manashield.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationAriseMyChampions" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-manashield.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="SandboxModeInfiniteMinerals" parent="HiddenUpgrade">
+        <EffectArray Operation="Set" Reference="Effect,TychusFirstOnesontheHouseModify,ResourcesCollected[Minerals]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Effect,TychusFirstOnesontheHouseModify,Resources[Minerals]" Value="0"/>
+    </CUpgrade>
+    <CUpgrade id="SandboxModeRaceSelect" parent="HiddenUpgrade">
+        <EffectArray Operation="Set" Reference="Effect,TychusFirstOnesontheHouseModify,ResourcesCollected[Minerals]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Effect,TychusFirstOnesontheHouseModify,Resources[Minerals]" Value="0"/>
+    </CUpgrade>
+    <CUpgrade id="SandboxModeNexusDontDie" parent="HiddenUpgrade"/>
+    <CUpgrade id="SandboxModeOverpoweredBase" parent="HiddenUpgrade">
+        <EffectArray Reference="Effect,ObjectiveNexusDamage,Amount" Value="430"/>
+        <EffectArray Reference="Unit,ObjectiveNexus,LifeRegenRate" Value="200.000000"/>
+        <EffectArray Reference="Unit,ObjectiveNexus,ShieldRegenRate" Value="200.000000"/>
+        <EffectArray Reference="Effect,ObjectivePlanetaryFortressDamage,Amount" Value="430"/>
+        <EffectArray Reference="Unit,ObjectivePlanetaryFortress,LifeRegenRate" Value="200.000000"/>
+        <EffectArray Reference="Unit,ObjectivePlanetaryFortress,ShieldRegenRate" Value="200.000000"/>
+        <EffectArray Reference="Effect,ObjectivePlanetaryFortressDamageAlt,Amount" Value="430"/>
+    </CUpgrade>
+    <CUpgrade id="SeasonalEnable" parent="HiddenUpgrade"/>
+    <CUpgrade id="SeasonalOctober" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerAuraAvailable">
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="MutationAura" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-giftoflife.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="MutationUnity" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
+    </CUpgrade>
+    <CUpgrade id="MutationEndurance" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-natureresistance.dds"/>
+        <EffectArray Operation="Set" Reference="Behavior,WaveUnit,Duration" Value="0.062500"/>
+        <EffectArray Operation="Set" Reference="Behavior,WaveUnit,PeriodCount" Value="0"/>
+        <EffectArray Operation="Set" Reference="Effect,WaveUnit,Chance" Value="0"/>
+        <EffectArray Operation="Set" Reference="Effect,WaveUnitTimedLifeFate,Chance" Value="0"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationPvEEnemyType" parent="HiddenUpgrade">
+        <MaxLevel value="12"/>
+    </CUpgrade>
+    <CUpgrade id="Tier">
+        <Icon value="Assets\Textures\btn-menu-tier2.dds"/>
+        <EditorCategories value="Race:Neutral,UpgradeType:Talents"/>
+    </CUpgrade>
+    <CUpgrade id="ChitinousPlating">
+        <EffectArray Reference="Unit,Torrasque,LifeArmor" Value="2"/>
+        <EffectArray Reference="Unit,Torrasque,LifeArmorLevel" Value="2"/>
+    </CUpgrade>
+    <CUpgrade id="ExtendedThermalLance">
+        <EffectArray Reference="Weapon,PurifierColossus,Range" Value="3"/>
+    </CUpgrade>
+    <CUpgrade id="VanadiumPlatingController" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
+    </CUpgrade>
+    <CUpgrade id="VanadiumPlatingInfantry" parent="HiddenUpgrade">
+        <EffectArray Reference="Unit,Marine,LifeMax" Value="4.5"/>
+        <EffectArray Reference="Unit,Marine,LifeStart" Value="4.5"/>
+        <EffectArray Reference="Unit,MarineLightweight,LifeMax" Value="4.5"/>
+        <EffectArray Reference="Unit,MarineLightweight,LifeStart" Value="4.5"/>
+        <EffectArray Reference="Unit,Marauder,LifeMax" Value="12.5"/>
+        <EffectArray Reference="Unit,Marauder,LifeStart" Value="12.5"/>
+        <EffectArray Reference="Unit,Firebat,LifeMax" Value="10"/>
+        <EffectArray Reference="Unit,Firebat,LifeStart" Value="10"/>
+        <EffectArray Reference="Unit,FirebatStarlight,LifeMax" Value="10"/>
+        <EffectArray Reference="Unit,FirebatStarlight,LifeStart" Value="10"/>
+        <EffectArray Reference="Unit,MedicStarlight,LifeMax" Value="6"/>
+        <EffectArray Reference="Unit,MedicStarlight,LifeStart" Value="6"/>
+        <EffectArray Reference="Unit,Spectre,LifeMax" Value="8"/>
+        <EffectArray Reference="Unit,Spectre,LifeStart" Value="8"/>
+        <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
+        <MaxLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="VanadiumPlatingVehicles" parent="HiddenUpgrade">
+        <EffectArray Reference="Unit,Banshee,LifeMax" Value="14"/>
+        <EffectArray Reference="Unit,Banshee,LifeStart" Value="14"/>
+        <EffectArray Reference="Unit,BattlecruiserRaynor,LifeMax" Value="55"/>
+        <EffectArray Reference="Unit,BattlecruiserRaynor,LifeStart" Value="55"/>
+        <EffectArray Reference="Unit,VikingAssault,LifeMax" Value="12.5"/>
+        <EffectArray Reference="Unit,VikingAssault,LifeStart" Value="12.5"/>
+        <EffectArray Reference="Unit,VikingFighter,LifeMax" Value="12.5"/>
+        <EffectArray Reference="Unit,VikingFighter,LifeStart" Value="12.5"/>
+        <EffectArray Reference="Unit,DuskWing,LifeMax" Value="17.5"/>
+        <EffectArray Reference="Unit,DuskWing,LifeStart" Value="17.5"/>
+        <EffectArray Reference="Unit,SiegeTank,LifeMax" Value="16"/>
+        <EffectArray Reference="Unit,SiegeTank,LifeStart" Value="16"/>
+        <EffectArray Reference="Unit,SiegeTankSieged,LifeMax" Value="16"/>
+        <EffectArray Reference="Unit,SiegeTankSieged,LifeStart" Value="16"/>
+        <EffectArray Reference="Unit,SiegeTankRaynor,LifeMax" Value="16"/>
+        <EffectArray Reference="Unit,SiegeTankRaynor,LifeStart" Value="16"/>
+        <EffectArray Reference="Unit,VultureStarlight,LifeMax" Value="7.5"/>
+        <EffectArray Reference="Unit,VultureStarlight,LifeStart" Value="7.5"/>
+        <EffectArray Reference="Unit,RaynorHyperion,LifeMax" Value="200"/>
+        <EffectArray Reference="Unit,RaynorHyperion,LifeStart" Value="200"/>
+        <MaxLevel value="3"/>
+        <Icon value="Assets\Textures\btn-research-terran-vanadiumplating.dds"/>
+    </CUpgrade>
+    <CUpgrade id="MutationBrilliance" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-brillianceaura.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationShroud" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-ancientknowledge.dds"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[Cloak]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[Bury]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[Undetectable]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[SuppressCloak]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[Cloak]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[Bury]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[Undetectable]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[SuppressCloak]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,StagingAreaMinerals,Modification.StateFlags[Undetectable]" Value="1"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="HideWorkerCommandCard" parent="HiddenUpgrade"/>
+    <CUpgrade id="DummyUpgrade" parent="HiddenUpgrade"/>
+    <CUpgrade id="MutationStockpile" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-bribe.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="PartyFrameHide" parent="HiddenUpgrade"/>
+    <CUpgrade id="RefinerySkinBiomass" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinbiomass.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinNone" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-command-cancel_nobg.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinCybros" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-suppressionpulse.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinHighlight" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-promote.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinHologram" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinhologram.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinJade" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinjade.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinMineral" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinmineral.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinPsionic" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinpsionic.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinRedstone" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-brimstone.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinSepia" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsepia.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinShadow" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-shadowfury.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinSnow" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsnow.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinSolarite" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsolarite.dds"/>
+    </CUpgrade>
+    <CUpgrade id="RefinerySkinVoid" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinvoid.dds"/>
+    </CUpgrade>
+    <CUpgrade id="MutationDischarge" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-volatilebarrier.dds"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectiveNexus,ShieldsMax" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectiveNexus,ShieldsStart" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectivePhotonCannon,ShieldsMax" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectivePhotonCannon,ShieldsStart" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectivePlanetaryFortress,ShieldsMax" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectivePlanetaryFortress,ShieldsStart" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectiveBunker,ShieldsMax" Value="0"/>
+        <EffectArray Operation="Set" Reference="Unit,ObjectiveBunker,ShieldsStart" Value="0"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationVoid" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-enslave.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.SightBonus" Value="-3"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeBelShir" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-belshir.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeNone" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-command-cancel_nobg.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeShakuras" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-shakuras.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeKaldir" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-kaldir.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeChar" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-char.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeMarSara" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-marsara.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeSlayn" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-slayn.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeElsecaro" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-elsecaro.dds"/>
+    </CUpgrade>
+    <CUpgrade id="ThemeZerus" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-planet-zerus.dds"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryPassiveExperience" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="UnitIsBanned" parent="HiddenUpgrade"/>
+    <CUpgrade id="MutationAccord" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-deathanddecay.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationEquipment" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-weapon-hero.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationSuperscan" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <EffectArray Operation="Set" Reference="Abil,NeutralScan,Cost[0].Cooldown.TimeUse" Value="0.000000"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationRescue" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-meteor.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationExile" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-assassinate.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="DisableDummyWeapons" parent="HiddenUpgrade"/>
+    <CUpgrade id="MutationBountiful" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-abolishmagic.dds"/>
+        <EffectArray Operation="Multiply" Reference="Effect,MineralIncomeDummyIncrement,Amount" Value="2"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationGridlock" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-slow.dds"/>
+        <EffectArray Operation="Set" Reference="Abil,NeutralUpgradesAutocast,InfoArray[Train1].Cooldown.TimeUse" Value="126.000000"/>
+        <EffectArray Operation="Set" Reference="Abil,NeutralUpgradesAutocast,InfoArray[Train2].Cooldown.TimeUse" Value="126.000000"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationSap" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-curseofweakness.dds"/>
+        <EffectArray Operation="Multiply" Reference="Weapon,ObjectiveBunker,Period" Value="2.000000"/>
+        <EffectArray Operation="Multiply" Reference="Weapon,ObjectivePhotonCannon,Period" Value="2.000000"/>
+        <EffectArray Operation="Multiply" Reference="Weapon,ObjectivePlanetaryFortress,Period" Value="2.000000"/>
+        <EffectArray Operation="Multiply" Reference="Weapon,ObjectiveNexus,Period" Value="2.000000"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationBastion" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-demolish.dds"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveBunker,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveBunker,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveSupplyDepot,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveSupplyDepot,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePhotonCannon,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePhotonCannon,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePlanetaryFortress,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePlanetaryFortress,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveMjolnirBattery,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveMjolnirBattery,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePhaseArray,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePhaseArray,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveNexus,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveNexus,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePylon,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectivePylon,LifeStart" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveVoidThrasher,LifeMax" Value="2"/>
+        <EffectArray Operation="Multiply" Reference="Unit,ObjectiveVoidThrasher,LifeStart" Value="2"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationInsight" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-dustofappearance.dds"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[Cloak]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[Bury]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[Undetectable]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,UnitSpawner,Modification.StateFlags[SuppressCloak]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[Cloak]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[Bury]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[Undetectable]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,WorkerSwappable,Modification.StateFlags[SuppressCloak]" Value="0"/>
+        <EffectArray Operation="Set" Reference="Behavior,StagingAreaMinerals,Modification.StateFlags[Undetectable]" Value="1"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationCommanders" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-menu-gameplayhelp_coop.dds"/>
+        <EffectArray Operation="Set" Reference="Behavior,WaveUnit,Duration" Value="130.000000"/>
+        <EffectArray Operation="Set" Reference="Behavior,WaveUnit,Period" Value="102.000000"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MineralIncomeBonus" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\icon-highyieldmineral-nobg.dds"/>
+    </CUpgrade>
+    <CUpgrade id="PlayerAttributeUnitSpawnersTotal" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="PlayerIsAFK" parent="HiddenUpgrade"/>
+    <CUpgrade id="Tier2">
+        <Icon value="Assets\Textures\btn-menu-tier2.dds"/>
+        <ScoreAmount value="500"/>
+        <EffectArray Operation="Set" Reference="Abil,RaynorScan,Cost[0].Charge.HideCount" Value="0"/>
+        <EditorCategories value="Race:Neutral,UpgradeType:Talents"/>
+        <LeaderAlias value="Tier"/>
+        <LeaderLevel value="1"/>
+    </CUpgrade>
+    <CUpgrade id="Tier3">
+        <Icon value="Assets\Textures\btn-menu-tier3.dds"/>
+        <ScoreAmount value="900"/>
+        <EditorCategories value="Race:Neutral,UpgradeType:Talents"/>
+        <LeaderAlias value="Tier"/>
+        <LeaderLevel value="2"/>
+    </CUpgrade>
+    <CUpgrade id="Tier4">
+        <Icon value="Assets\Textures\btn-menu-tier4.dds"/>
+        <ScoreAmount value="1300"/>
+        <EditorCategories value="Race:Neutral,UpgradeType:Talents"/>
+        <LeaderAlias value="Tier"/>
+        <LeaderLevel value="3"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySprayCooldown" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteCooldown" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteDuration" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSpeed" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+        <EffectArray Reference="Behavior,MasteryWorkerSpeed,Modification.MoveSpeedBonus" Value="0.031250"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSize" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+        <AffectedUnitArray value="WorkerProtoss"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySpraySize" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+        <EffectArray Reference="Actor,SprayDecal,Scale" Value="0.005000"/>
+        <AffectedUnitArray value="SprayDecal"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryXPMultiplier" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerCommanderSelect" parent="HiddenUpgrade"/>
+    <CUpgrade id="PlacementFacingNE" parent="HiddenUpgrade"/>
+    <CUpgrade id="PlacementFacingNW" parent="HiddenUpgrade"/>
+    <CUpgrade id="PlacementFacingSW" parent="HiddenUpgrade"/>
+    <CUpgrade id="PlacementFacingSE" parent="HiddenUpgrade"/>
+    <CUpgrade id="AuraAir" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RangedWeaponRange" Value="0.5"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedBonus" Value="0.714800"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.25"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraBlood" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenArray[Life]" Value="5.714800"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraEarth" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.LifeArmorBonus" Value="2"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.ShieldArmorBonus" Value="2"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraFire" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.DamageDealtUnscaled[Melee]" Value="2"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.DamageDealtUnscaled[Ranged]" Value="2"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.DamageDealtUnscaled[Splash]" Value="2"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraForce" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RangedWeaponRange" Value="1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedBonus" Value="1.429600"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraIce" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalMaxArray[Life]" Value="15"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.LifeArmorBonus" Value="1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.ShieldArmorBonus" Value="1"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraLife" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalMaxArray[Life]" Value="30"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraShadow" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.15"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraStorm" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.25"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.DamageDealtUnscaled[Melee]" Value="1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.DamageDealtUnscaled[Ranged]" Value="1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.DamageDealtUnscaled[Splash]" Value="1"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraTime" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.08"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.2"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.2"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="AuraWater" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.LifeArmorBonus" Value="1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.ShieldArmorBonus" Value="1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.2"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.2"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="SandboxModeInfiniteEnergy" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenArray[Energy]" Value="10.000000"/>
+    </CUpgrade>
+    <CUpgrade id="SandboxModeRapidCooldown" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="9"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="9"/>
+    </CUpgrade>
+    <CUpgrade id="AutoMineralFieldsActive" parent="HiddenUpgrade"/>
+    <CUpgrade id="UsingVespeneIncapableWorker" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerCommanderSelectTimer1" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,WorkerCommanderSelectTimer,Duration" Value="0.000000"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerCommanderSelectTimer2" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,WorkerCommanderSelectTimer,Duration" Value="0.500000"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerCommanderSelectTimer3" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,WorkerCommanderSelectTimer,Duration" Value="1.000000"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerCommanderSelectTimer4" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,WorkerCommanderSelectTimer,Duration" Value="1.500000"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerCommanderSelectTimer5" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,WorkerCommanderSelectTimer,Duration" Value="2.000000"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerCommanderSelectTimer6" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,WorkerCommanderSelectTimer,Duration" Value="2.500000"/>
+    </CUpgrade>
+    <CUpgrade id="StagingAreaNextSpawn" parent="HiddenUpgrade"/>
+    <CUpgrade id="AFKTimerMutedAccelerator" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\ui_squelchbutton_muted.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="1.000000"/>
+    </CUpgrade>
+    <CUpgrade id="DecorationKillFanfare" parent="HiddenUpgrade"/>
+    <CUpgrade id="DecorationPassiveEmoteCount" parent="HiddenUpgrade">
+        <EffectArray Reference="Abil,EmoteItem,Cost[0].Charge.CountStart" Value="1"/>
+        <EffectArray Reference="Abil,EmoteItem,Cost[0].Charge.CountMax" Value="1"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="DecorationPassiveUnitKillCounter" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="DecorationPassiveUpgradeSpendingCounter" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="EmoteVictoryRed" parent="HiddenUpgrade"/>
+    <CUpgrade id="MasteryRefinerySizeExtra" parent="HiddenUpgrade">
+        <AffectedUnitArray value="WorkerProtoss"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerValueAcceleratorLevel1" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-resurgence.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.375000"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerValueAcceleratorLevel2" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-resurgence.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.375000"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerValueAcceleratorLevel3" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-resurgence.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.375000"/>
+    </CUpgrade>
+    <CUpgrade id="DecorationPassiveSprayCount" parent="HiddenUpgrade">
+        <EffectArray Reference="Abil,SprayItem,Cost[0].Charge.CountStart" Value="1"/>
+        <EffectArray Reference="Abil,SprayItem,Cost[0].Charge.CountMax" Value="1"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteCooldownExtra" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryEmoteDurationExtra" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryPassiveExperienceExtra" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySprayCooldownExtra" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasterySpraySizeExtra" parent="HiddenUpgrade">
+        <EffectArray Reference="Actor,SprayDecal,Scale" Value="0.005000"/>
+        <AffectedUnitArray value="SprayDecal"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryUnspentPoints" parent="HiddenUpgrade">
+        <EffectArray Reference="Abil,WorkerSubmenu,InfoArray[Specialize2].Charge.CountMax" Value="1"/>
+        <MaxLevel value="99"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryRefinerySize" parent="HiddenUpgrade">
+        <AffectedUnitArray value="WorkerProtoss"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSizeExtra" parent="HiddenUpgrade">
+        <AffectedUnitArray value="WorkerProtoss"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryWorkerSpeedExtra" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,MasteryWorkerSpeed,Modification.MoveSpeedBonus" Value="0.031250"/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MasteryXPMultiplierExtra" parent="HiddenUpgrade">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="MutationEquality" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-reverberation.dds"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.StateFlags[UnitAttrOnArmored]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.StateFlags[UnitAttrOnBiological]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.StateFlags[UnitAttrOnHeroic]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.StateFlags[UnitAttrOnLight]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.StateFlags[UnitAttrOnMassive]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.StateFlags[UnitAttrOnMechanical]" Value="1"/>
+        <EffectArray Operation="Set" Reference="Behavior,GlobalUnitModifier,Modification.StateFlags[UnitAttrOnPsionic]" Value="1"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationEntropy" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-abilitypowermastery.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationSynergy" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-arcaneorb.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationStetapult" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-stetmann-ravagermechacorrosivebile.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationRaidBoss" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-emerald.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationTheBestOil" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-stetmann-garyattackandregen.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationSN1PSN4P" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-stetmann-mechareconstitution.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationUnstoppable" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-shadowwordpain.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel10" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel11" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel12" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel13" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel14" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel15" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel16" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel17" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel18" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerSellAcceleratorLevel1" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-bronze.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.625000"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerSellAcceleratorLevel2" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-silver.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.625000"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerSellAcceleratorLevel3" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-gold.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.625000"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerSellAcceleratorLevel4" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-full.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.625000"/>
+    </CUpgrade>
+    <CUpgrade id="AFKTimerSellAcceleratorLevel5" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-full.dds"/>
+        <EffectArray Operation="Subtract" Reference="Unit,AFKTimer,EnergyRegenRate" Value="0.625000"/>
+    </CUpgrade>
+    <CUpgrade id="MercCampPowerLevel1" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,MercCampPowerBaseline,Modification.AttributeChangeArray[0].Points" Value="1"/>
+    </CUpgrade>
+    <CUpgrade id="MercCampPowerLevel2" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,MercCampPowerBaseline,Modification.AttributeChangeArray[0].Points" Value="1"/>
+    </CUpgrade>
+    <CUpgrade id="MercCampPowerLevel3" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,MercCampPowerBaseline,Modification.AttributeChangeArray[0].Points" Value="1"/>
+    </CUpgrade>
+    <CUpgrade id="MutationHeavensDevils" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\talent-tychus-level01-squadbar.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationHillsCantina" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-tips-cantina.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationLizzyBrigade" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-intimidatingroar.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationTychusHomebrew" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-fanaticaloppression.dds"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.5"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.5"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenArray[Life]" Value="2.000000"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationMercs" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-advancedtargeting.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationHeroism" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-bountyhunter.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationStronghold" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-bunkerdrop.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationHaste" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\ui_mutation_haste.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationHallowed" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-ardentdefender.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerOverrideStetmann" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideTest" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideZeratul" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideTychus" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideMengsk" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSkinBiomass" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinbiomass.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinCybros" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-suppressionpulse.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinHighlight" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-promote.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinHologram" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinhologram.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinJade" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinjade.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinMineral" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinmineral.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinNone" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-command-cancel_nobg.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinPsionic" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinpsionic.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinRedstone" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-brimstone.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinSepia" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsepia.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinShadow" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-shadowfury.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinSnow" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsnow.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinSolarite" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsolarite.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerSkinVoid" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinvoid.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel1" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel2" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel3" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel4" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel5" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel6" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel7" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel8" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="StrikeWeaponryLevel9" parent="HiddenUpgrade">
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.AttackSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.MoveSpeedMultiplier" Value="0.1"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMaximum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,SpeedLimit,Modification.MoveSpeedMinimum" Value="0.226500"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.VitalRegenMultiplier[Energy]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Charge]" Value="0.05"/>
+        <EffectArray Reference="Behavior,GlobalUnitModifier,Modification.RateMultiplierArray[Cooldown]" Value="0.05"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CUpgrade>
+    <CUpgrade id="WorkerOverride" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideStukov" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideDehaka" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideKerrigan" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideZagara" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideRaynor" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideKarax" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideFenix" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideSwann" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideHorner" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideVorazun" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideNova" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideArtanis" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideAlarak" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideAbathur" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerOverrideRandomCommander" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuAbilityControl" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuDiscord" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuLiveScoreboard" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuMastery" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuBlacklist" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuMasteryCode" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuStagingAreaCustomization" parent="HiddenUpgrade"/>
+    <CUpgrade id="WorkerSubmenuWorkerSelect" parent="HiddenUpgrade"/>
+    <CUpgrade id="MutationCovenant" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel1.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="MutationExpansion" parent="HiddenUpgrade">
+        <Icon value="Assets\Textures\btn-ability-neutral-devotionaura-scifi.dds"/>
+        <TechAliasArray value="Alias_Mutation"/>
+    </CUpgrade>
+    <CUpgrade id="PremiumReward" parent="HiddenUpgrade"/>
+    <CUpgrade id="ModeratorReward" parent="HiddenUpgrade"/>
+    <CUpgrade id="RacialBaseClusterAdvanced">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="RacialBaseClusterAir">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="RacialBaseClusterTech">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="RacialBaseClusterProduction">
+        <MaxLevel value="100"/>
+    </CUpgrade>
+    <CUpgrade id="ChampionWaitingForRespawn" parent="HiddenUpgrade">
+        <EffectArray Reference="Abil,ChampionRevive,Cost[0].Charge.CountMax" Value="1"/>
+        <EffectArray Reference="Abil,ChampionRevive,Cost[0].Charge.CountStart" Value="1"/>
+        <EditorCategories value=""/>
+        <MaxLevel value="100"/>
+    </CUpgrade>
+
+</Catalog>

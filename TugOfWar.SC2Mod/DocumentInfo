@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Flags>
+        <Value>PreloadNoTrigger</Value>
+    </Flags>
+    <Dependencies>
+        <Value>bnet:Void (Mod)/0.0/999,file:Mods\all-races-mods\dependencies\VoidMulti.SC2Mod</Value>
+        <Value>bnet:[ARC] Triggers/1.3/322159,file:Mods\all-races-mods\dependencies\Triggers.SC2Mod</Value>
+        <Value>bnet:[ARM] Scion Races/0.0/206557,file:Mods\all-races-mods\factions\Scion.SC2Mod</Value>
+        <Value>bnet:[ARM] UED/0.0/206558,file:Mods\all-races-mods\factions\UED.SC2Mod</Value>
+        <Value>bnet:[ARM] Network Hybrids/0.0/206556,file:Mods\all-races-mods\factions\Hybrids.SC2Mod</Value>
+        <Value>bnet:[ARM] Dragons/0.0/206555,file:Mods\all-races-mods\factions\Dragons.SC2Mod</Value>
+        <Value>bnet:[ARM] UPL/0.0/311452,file:Mods\all-races-mods\factions\UPL.SC2Mod</Value>
+        <Value>bnet:[ARA] SLI/0.0/318959,file:Mods\ARC-ASSETS.SC2Mod</Value>
+    </Dependencies>
+    <!--Dependencies>
+        <Value>file:Mods\all-races-mods\dependencies\Factions.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\Scion.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\UPLMulti.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\Hybrids.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\UED.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\Dragons.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\Umojan.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\WarCraft.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\Tyranid.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\dependencies\LegacyCoop.SC2Mod</Value>
+        <Value>file:Mods\all-races-mods\factions\Nexus.SC2Mod</Value>
+    </Dependencies-->
+</DocInfo>

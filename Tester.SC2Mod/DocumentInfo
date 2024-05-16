@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Dependencies>
+        <Value>bnet:[AR2] Triggers/0.0/231104,file:Mods\all-races-mods\dependencies\Triggers.SC2Mod</Value>
+    </Dependencies>
+</DocInfo>

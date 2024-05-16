@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton default="1" id="Item">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowLevel" value="0"/>
+        <TooltipFlags index="ShowSupply" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <TooltipFlags index="ShowAutocast" value="0"/>
+        <EditorCategories value="Race:Item"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton default="1" id="Place">
+        <?token id="Targets" value="None"?>
+        <?token id="Abil1" type="CButtonLink" value="Bogus"?>
+        <?token id="Abil2" type="CButtonLink" value="Bogus"?>
+        <?token id="Abil3" type="CButtonLink" value="Bogus"?>
+        <?token id="Abil4" type="CButtonLink" value="Bogus"?>
+        <?token id="Name" type="CUnitLink" value="Bogus"?>
+        <?token id="Art"?>
+        <?token id="Race" value="Neutral"?>
+        <Icon value="Assets\Textures\##Art##.dds"/>
+        <AlertIcon value="Assets\Textures\##Art##.dds"/>
+        <EditorCategories value="Race:Place"/>
+        <Name value="Unit/Name/##Name##"/>
+        <TooltipAppender Text="Button/Appender/NewLine"/>
+        <TooltipAppender Text="Button/Appender/PlacePrefix"/>
+        <TooltipAppender Text="Button/Appender/##Abil1##"/>
+        <TooltipAppender Text="Button/Name/##Abil1##"/>
+        <TooltipAppender Text="Button/Appender/##Abil2##"/>
+        <TooltipAppender Text="Button/Name/##Abil2##"/>
+        <TooltipAppender Text="Button/Appender/##Abil3##"/>
+        <TooltipAppender Text="Button/Name/##Abil3##"/>
+        <TooltipAppender Text="Button/Appender/##Abil4##"/>
+        <TooltipAppender Text="Button/Name/##Abil4##"/>
+        <TooltipAppender Text="Button/Appender/CanAttack##Targets##"/>
+        <TooltipAppender Text="e_gameUIStringCanAttack##Targets##"/>
+        <TooltipAppender Text="Button/Appender/##id##"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowSupply" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowAutocast" value="0"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton default="1" id="Upgrade">
+        <?token id="Tooltip" type="CButtonLink" value="Bogus"?>
+        <?token id="Upgrade" type="CUpgradeLink" value="Bogus"?>
+        <Name value="Upgrade/Name/##Upgrade##"/>
+        <Tooltip value="Button/Tooltip/##Tooltip##"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <EditorCategories value="Race:Upgrade"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Demolish">
+        <Icon value="Assets\Textures\btn-ability-neutral-demolish.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_None_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-none.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_1_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-1.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_2_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-2.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_3_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-3.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_4_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-4.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_5_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-5.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_6_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-6.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_7_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-7.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_8_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-8.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_9_Zerg">
+        <Icon value="Assets\Textures\btn-command-zerg-autocontrolgroup-9.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_None_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-none.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_1_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-1.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_2_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-2.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_3_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-3.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_4_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-4.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_5_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-5.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_6_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-6.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_7_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-7.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_8_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-8.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_9_Terran">
+        <Icon value="Assets\Textures\btn-command-Terran-autocontrolgroup-9.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_None_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-none.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_1_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-1.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_2_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-2.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_3_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-3.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_4_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-4.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_5_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-5.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_6_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-6.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_7_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-7.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_8_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-8.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="AutoControlGroup_9_Protoss">
+        <Icon value="Assets\Textures\btn-command-Protoss-autocontrolgroup-9.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationAriseMyChampions">
+        <Icon value="Assets\Textures\btn-ability-neutral-zeal.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-zeal.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationExpandedArmaments">
+        <Icon value="Assets\Textures\btn-ability-neutral-rally_human.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-rally_human.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <DefaultButtonLayout CardId="1"/>
+    </CButton>
+    <CButton id="DecorationsContainer">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-decorations.dds"/>
+        <UseHotkeyLabel value="0"/>
+        <TintRacially value="1"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="CreditsRank1">
+        <Icon value="Assets\Textures\ui_credits_rank_1.dds"/>
+        <AlertIcon value="Assets\Textures\ui_credits_rank_1.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="CreditsRank2">
+        <Icon value="Assets\Textures\ui_credits_rank_2.dds"/>
+        <AlertIcon value="Assets\Textures\ui_credits_rank_2.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="CreditsRank3">
+        <Icon value="Assets\Textures\ui_credits_rank_3.dds"/>
+        <AlertIcon value="Assets\Textures\ui_credits_rank_3.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="CreditsRank4">
+        <Icon value="Assets\Textures\ui_credits_rank_4.dds"/>
+        <AlertIcon value="Assets\Textures\ui_credits_rank_4.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="CreditsRank5">
+        <Icon value="Assets\Textures\ui_credits_rank_5.dds"/>
+        <AlertIcon value="Assets\Textures\ui_credits_rank_5.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="CrystalforgeDetails">
+        <Icon value="Assets\Textures\btn-menu-gameplayhelp_orange.dds"/>
+    </CButton>
+    <CButton id="MutationEquality">
+        <Icon value="Assets\Textures\btn-ability-neutral-reverberation.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-reverberation.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationEntropy">
+        <Icon value="Assets\Textures\btn-ability-neutral-abilitypowermastery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-abilitypowermastery.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationAlphaTimeline">
+        <Icon value="Assets\Textures\btn-progression-protoss-fenix-10-acceleratedtech.dds"/>
+        <AlertIcon value="Assets\Textures\btn-progression-protoss-fenix-10-acceleratedtech.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationKitchenSink">
+        <Icon value="Assets\Textures\btn-ability-neutral-manashield.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-manashield.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="MutationSynergy">
+        <Icon value="Assets\Textures\btn-ability-neutral-arcaneorb.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-arcaneorb.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationRaidBoss">
+        <Icon value="Assets\Textures\btn-ability-neutral-emerald.dds"/>
+        <AlertIcon value="Assets\Textures\fear_coop.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationTheBestOil">
+        <Icon value="Assets\Textures\btn-ability-stetmann-garyattackandregen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-garyattackandregen.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationStetapult">
+        <Icon value="Assets\Textures\btn-ability-stetmann-ravagermechacorrosivebile.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-ravagermechacorrosivebile.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationSN1PSN4P">
+        <Icon value="Assets\Textures\btn-ability-stetmann-mechareconstitution.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-stetmann-mechareconstitution.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationUnstoppable">
+        <Icon value="Assets\Textures\btn-ability-neutral-shadowwordpain.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-shadowwordpain.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="SandboxCommands">
+        <Icon value="Assets\Textures\btn-ability-neutral-abilitypowermastery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-abilitypowermastery.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="SandboxModeRepick">
+        <Icon value="Assets\Textures\btn-ability-neutral-abilitypowermastery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-karax-unitybarrier.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="SandboxModeResetTech">
+        <Icon value="Assets\Textures\btn-ability-neutral-slow.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-karax-energyregen200.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel10">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel11">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-endurancelevel2.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel12">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-endurancelevel3.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel13">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel1.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel14">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel2.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel15">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel3.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel16">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel1.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel17">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel2.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel18">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel3.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="WorkerSubmenu">
+        <Icon value="Assets\Textures\btn-menu-starcraft.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-starcraft.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuBlacklist">
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridarmorlevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-abilitycontrol.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuDiscord">
+        <Icon value="Assets\Textures\btn-menu-discord.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-discord.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuWorkerSelect">
+        <Icon value="Assets\Textures\btn-unit-terran-scv.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-scv.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuLiveScoreboard">
+        <Icon value="Assets\Textures\btn-menu-livescoreboard.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-livescoreboard.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuMastery">
+        <Icon value="Assets\Textures\btn-ability-neutral-mastery.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-mastery.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuAbilityControl">
+        <Icon value="Assets\Textures\btn-menu-abilitycontrol.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-abilitycontrol.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuStagingAreaCustomization">
+        <Icon value="Assets\Textures\btn-ability-neutral-premium.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-premium.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerSubmenuMasteryCode">
+        <Icon value="Assets\Textures\btn-ability-neutral-volatilebarrier.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-save.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="WorkerStetmann">
+        <Name value="Commander/Name/Stetmann"/>
+        <TooltipAppender Text="Button/Appender/NewLine"/>
+        <TooltipAppender Text="Button/Appender/PlacePrefix"/>
+        <TooltipAppender Text="Button/Appender/CommanderAggressive"/>
+        <TooltipAppender Text="Button/Appender/NewLine"/>
+        <TooltipAppender Text="Button/Appender/NewLineClearStyle"/>
+        <TooltipAppender Text="Button/Appender/WorkerStetmann"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <Icon value="Assets\Textures\btn-unit-hero-Stetmann.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-hero-Stetmann.dds"/>
+    </CButton>
+    <CButton id="WorkerTychus">
+        <Name value="Commander/Name/Tychus"/>
+        <TooltipAppender Text="Button/Appender/NewLine"/>
+        <TooltipAppender Text="Button/Appender/PlacePrefix"/>
+        <TooltipAppender Text="Button/Appender/CommanderAggressive"/>
+        <TooltipAppender Text="Button/Appender/NewLine"/>
+        <TooltipAppender Text="Button/Appender/NewLineClearStyle"/>
+        <TooltipAppender Text="Button/Appender/WorkerTychus"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <Icon value="Assets\Textures\btn-unit-hero-tychus.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-hero-tychus.dds"/>
+    </CButton>
+    <CButton id="WorkerZeratul">
+        <Name value="Commander/Name/Zeratul"/>
+        <TooltipAppender Text="Button/Appender/NewLine"/>
+        <TooltipAppender Text="Button/Appender/PlacePrefix"/>
+        <TooltipAppender Text="Button/Appender/CommanderAggressive"/>
+        <TooltipAppender Text="Button/Appender/NewLine"/>
+        <TooltipAppender Text="Button/Appender/NewLineClearStyle"/>
+        <TooltipAppender Text="Button/Appender/WorkerZeratul"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <Icon value="Assets\Textures\btn-unit-hero-zeratul.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-hero-zeratul.dds"/>
+    </CButton>
+    <CButton id="MutationHillsCantina">
+        <Icon value="Assets\Textures\btn-tips-cantina.dds"/>
+        <AlertIcon value="Assets\Textures\btn-tips-cantina.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationHeavensDevils">
+        <Icon value="Assets\Textures\talent-tychus-level01-squadbar.dds"/>
+        <AlertIcon value="Assets\Textures\talent-tychus-level01-squadbar.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationLizzyBrigade">
+        <Icon value="Assets\Textures\btn-ability-zerg-dehaka-intimidatingroar.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-zerg-dehaka-intimidatingroar.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationMercs">
+        <Icon value="Assets\Textures\btn-ability-neutral-advancedtargeting.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-advancedtargeting.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationHeroism">
+        <Icon value="Assets\Textures\btn-ability-neutral-bountyhunter.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-bountyhunter.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationTychusHomebrew">
+        <Icon value="Assets\Textures\btn-ability-neutral-fanaticaloppression.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-fanaticaloppression.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationStronghold">
+        <Icon value="Assets\Textures\btn-ability-neutral-bunkerdrop.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-bunkerdrop.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationHaste">
+        <Icon value="Assets\Textures\ui_mutation_haste.dds"/>
+        <AlertIcon value="Assets\Textures\ui_mutation_haste.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationHallowed">
+        <Icon value="Assets\Textures\btn-ability-neutral-ardentdefender.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-ardentdefender.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationUnity">
+        <Icon value="Assets\Textures\btn-ability-neutral-shroudofwisdom.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-shroudofwisdom.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationAura">
+        <Icon value="Assets\Textures\btn-ability-neutral-giftoflife.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-giftoflife.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel1">
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-endurancelevel1.dds"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel2">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-endurancelevel2.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel3">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-endurancelevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-endurancelevel3.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel4">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel1.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel5">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel2.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel6">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel3.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel7">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel1.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel8">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel2.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="StrikeWeaponryLevel9">
+        <Tooltip value="Button/Tooltip/StrikeWeaponryLevel1"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridweaponrylevel3.dds"/>
+        <Hotkey value="Button/Hotkey/StrikeWeaponryLevel1"/>
+        <HotkeyAlias value="StrikeWeaponryLevel1"/>
+    </CButton>
+    <CButton id="MutationAccord">
+        <Icon value="Assets\Textures\btn-ability-neutral-deathanddecay.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-deathanddecay.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationBastion">
+        <Icon value="Assets\Textures\btn-ability-neutral-demolish.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-demolish.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationBountiful">
+        <Icon value="Assets\Textures\btn-ability-neutral-abolishmagic.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-abolishmagic.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationBrilliance">
+        <Icon value="Assets\Textures\btn-ability-neutral-brillianceaura.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-brillianceaura.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationCommanders">
+        <Icon value="Assets\Textures\btn-menu-gameplayhelp_coop.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-gameplayhelp_coop.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationCovenant">
+        <Icon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel1.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-neutral-hybridtechlevel1.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationDischarge">
+        <Icon value="Assets\Textures\btn-ability-neutral-volatilebarrier.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-volatilebarrier.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationDowntime">
+        <Icon value="Assets\Textures\btn-ability-neutral-weaken.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-weaken.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationEndurance">
+        <Icon value="Assets\Textures\btn-ability-neutral-natureresistance.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-natureresistance.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationEquipment">
+        <Icon value="Assets\Textures\btn-weapon-hero.dds"/>
+        <AlertIcon value="Assets\Textures\btn-weapon-hero.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationExile">
+        <Icon value="Assets\Textures\btn-ability-neutral-assassinate.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-assassinate.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationExpansion">
+        <Icon value="Assets\Textures\btn-ability-neutral-devotionaura-scifi.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-devotionaura-scifi.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationGridlock">
+        <Icon value="Assets\Textures\btn-ability-neutral-slow.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-slow.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationInsight">
+        <Icon value="Assets\Textures\btn-ability-neutral-dustofappearance.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-dustofappearance.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationOvertime">
+        <Icon value="Assets\Textures\btn-ability-neutral-timebomb.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-timebomb.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationRescue">
+        <Icon value="Assets\Textures\btn-ability-neutral-meteor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-meteor.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationSap">
+        <Icon value="Assets\Textures\btn-ability-neutral-curseofweakness.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-curseofweakness.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationShroud">
+        <Icon value="Assets\Textures\btn-ability-neutral-ancientknowledge.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-ancientknowledge.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationStockpile">
+        <Icon value="Assets\Textures\btn-ability-neutral-bribe.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-bribe.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationSuperscan">
+        <Icon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-scannersweep-color.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="MutationVoid">
+        <Icon value="Assets\Textures\btn-ability-neutral-enslave.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-enslave.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="Scan">
+        <TooltipAppender Validator="RaynorScanModification" Text="Button/Appender/RaynorMediaBlitz"/>
+    </CButton>
+    <CButton id="SkinHighlight">
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-neutral-promote.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-promote.dds"/>
+    </CButton>
+    <CButton id="SkinSnow">
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsnow.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinsnow.dds"/>
+    </CButton>
+    <CButton id="SkinSepia">
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsepia.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinsepia.dds"/>
+    </CButton>
+    <CButton id="SkinJade">
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-neutral-skinjade.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinjade.dds"/>
+    </CButton>
+    <CButton id="Spray">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+    </CButton>
+    <CButton id="SkinShadow">
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-neutral-shadowfury.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-shadowfury.dds"/>
+    </CButton>
+    <CButton id="AnionPulseCrystalsUpgrade" parent="Upgrade" Tooltip="AnionPulseCrystals" Upgrade="PhoenixRangeUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+    </CButton>
+    <CButton id="AnionPulseCrystalsUpgradeMirage" parent="Upgrade" Tooltip="AnionPulseCrystals" Upgrade="PhoenixRangeUpgrade">
+        <Icon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-protoss-phoenixrange.dds"/>
+        <Tooltip value="Button/Tooltip/AnionPulseCrystalsUpgradeMirage"/>
+    </CButton>
+
+
+    <CButton id="InfestedThorPlace">
+        <Icon value="Assets\Textures\btn-unit-terran-Thor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-unit-terran-Thor.dds"/>
+    </CButton>
+    <CButton id="TrophyRiftPremium">
+        <Icon value="Assets\Textures\wireframe-nova-beacon.dds"/>
+        <AlertIcon value="Assets\Textures\wireframe-nova-beacon.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+    </CButton>
+    <CButton id="SkinHologram">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinhologram.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinhologram.dds"/>
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinBiomass">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinbiomass.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinbiomass.dds"/>
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinMineral">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinmineral.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinmineral.dds"/>
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinPsionic">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinpsionic.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinpsionic.dds"/>
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinSelectWorker">
+        <Tooltip value="Button/Tooltip/SkinSelect"/>
+        <Icon value="Assets\Textures\btn-menu-strains.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-strains.dds"/>
+    </CButton>
+    <CButton id="SkinSelect">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-strains.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-strains.dds"/>
+    </CButton>
+    <CButton id="SkinSolarite">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinsolarite.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinsolarite.dds"/>
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinVoid">
+        <Icon value="Assets\Textures\btn-ability-neutral-skinvoid.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skinvoid.dds"/>
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinCybros">
+        <Icon value="Assets\Textures\btn-ability-neutral-suppressionpulse.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-suppressionpulse.dds"/>
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinRedstone">
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <Icon value="Assets\Textures\btn-ability-neutral-brimstone.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-brimstone.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="SkinRemove">
+        <TooltipAppender Validator="NoPremiumMode" Text="Button/Appender/PremiumReward"/>
+        <Icon value="Assets\Textures\btn-menu-strains-cancel.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-strains-cancel.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="Crystalforge">
+        <Icon value="Assets\Textures\btn-ability-neutral-crystalforgelevel2.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-crystalforgelevel2.dds"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+    </CButton>
+    <CButton id="BelShirSapphire" parent="Item">
+        <Icon value="Assets\Textures\btn-item-GemBlue2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-item-GemBlue2.dds"/>
+    </CButton>
+    <CButton id="RescueStrike">
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-neutral-airstrike.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-airstrike.dds"/>
+    </CButton>
+    <CButton id="ZerusPeridot" parent="Item">
+        <Icon value="Assets\Textures\btn-item-GemGreen2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-item-GemGreen2.dds"/>
+    </CButton>
+    <CButton id="UEDTopaz" parent="Item">
+        <Icon value="Assets\Textures\btn-item-GemOrange2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-item-GemOrange2.dds"/>
+    </CButton>
+    <CButton id="TerrazineAmethyst" parent="Item">
+        <Icon value="Assets\Textures\btn-item-GemPurple2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-item-GemPurple2.dds"/>
+    </CButton>
+    <CButton id="CharAgate" parent="Item">
+        <Icon value="Assets\Textures\btn-item-GemRed2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-item-GemRed2.dds"/>
+    </CButton>
+    <CButton id="ConclaveRelic" parent="Item">
+        <Icon value="Assets\Textures\btn-item-GemYellow2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-item-GemYellow2.dds"/>
+    </CButton>
+    <CButton id="Sell50">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-gold.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-sell-gold.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <Hotkey value="Button/Hotkey/Sell"/>
+    </CButton>
+    <CButton id="Sell60">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-silver.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-sell-silver.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <Hotkey value="Button/Hotkey/Sell"/>
+    </CButton>
+    <CButton id="Sell70">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-bronze.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-sell-bronze.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <Hotkey value="Button/Hotkey/Sell"/>
+    </CButton>
+    <CButton id="SellFull">
+        <Icon value="Assets\Textures\btn-ability-neutral-sell-full.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-sell-full.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <Hotkey value="Button/Hotkey/Sell"/>
+        <TooltipAppender Validator="RaynorCostReducedApplied" Text="Button/Appender/RaynorCostReducedApplied"/>
+    </CButton>
+
+    <CButton id="SellNone">
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <Icon value="Assets\Textures\icon-mineral-nobg.dds"/>
+        <AlertIcon value="Assets\Textures\icon-mineral-nobg.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <Hotkey value="Button/Hotkey/Sell"/>
+    </CButton>
+    <CButton id="Reposition1Protoss">
+        <Name value="Button/Name/Reposition1"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition1Terran">
+        <Name value="Button/Name/Reposition1"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition1Zerg">
+        <Name value="Button/Name/Reposition1"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition4Protoss">
+        <Name value="Button/Name/Reposition4"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition4Terran">
+        <Name value="Button/Name/Reposition4"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition4Zerg">
+        <Name value="Button/Name/Reposition4"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition9Protoss">
+        <Name value="Button/Name/Reposition9"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition9Terran">
+        <Name value="Button/Name/Reposition9"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition9Zerg">
+        <Name value="Button/Name/Reposition9"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition16Protoss">
+        <Name value="Button/Name/Reposition16"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition16Terran">
+        <Name value="Button/Name/Reposition16"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition16Zerg">
+        <Name value="Button/Name/Reposition16"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition20Protoss">
+        <Name value="Button/Name/Reposition20"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition20Terran">
+        <Name value="Button/Name/Reposition20"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition20Zerg">
+        <Name value="Button/Name/Reposition20"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition45Protoss">
+        <Name value="Button/Name/Reposition45"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition45Terran">
+        <Name value="Button/Name/Reposition45"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition45Zerg">
+        <Name value="Button/Name/Reposition45"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition60Protoss">
+        <Name value="Button/Name/Reposition60"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-protoss.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition60Terran">
+        <Name value="Button/Name/Reposition60"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-terran.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="Reposition60Zerg">
+        <Name value="Button/Name/Reposition60"/>
+        <Tooltip value="Button/Tooltip/Reposition"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-reposition-zerg.dds"/>
+        <Hotkey value="Button/Hotkey/Reposition"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="TrophyProtossVictories">
+        <Icon value="Assets\Textures\btn-ability-neutral-protossgreen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-protossgreen.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="TrophyTotalKills">
+        <Icon value="Assets\Textures\btn-ability-neutral-skullgreen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skullgreen.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="TrophyTotalLosses">
+        <Icon value="Assets\Textures\btn-ability-neutral-skullred.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-skullred.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="TrophyZergGames">
+        <Icon value="Assets\Textures\btn-ability-neutral-zergred.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-zergred.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="TrophyTerranVictories">
+        <Icon value="Assets\Textures\btn-ability-neutral-terrangreen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-terrangreen.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="TrophyTerranGames">
+        <Icon value="Assets\Textures\btn-ability-neutral-terranred.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-terranred.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="TrophyProtossGames">
+        <Icon value="Assets\Textures\btn-ability-neutral-protossred.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-protossred.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="TrophyZergVictories">
+        <Icon value="Assets\Textures\btn-ability-neutral-zerggreen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-zerggreen.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+    </CButton>
+    <CButton id="Firehawk" parent="Item">
+        <TooltipAppender Text="Button/Appender/Firehawk"/>
+        <Icon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-nova-equipment-plasmagun.dds"/>
+    </CButton>
+    <CButton id="Capjack" parent="Item">
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-specialordance.dds"/>
+        <TooltipAppender Text="Button/Appender/Capjack"/>
+    </CButton>
+    <CButton id="MountedRailgun" parent="Item">
+        <TooltipAppender Text="Button/Appender/MountedRailgun"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-snipetripletap.dds"/>
+    </CButton>
+    <CButton id="TridentMissiles" parent="Item">
+        <TooltipAppender Text="Button/Appender/TridentMissiles"/>
+        <Icon value="Assets\Textures\btn-upgrade-terran-nova-hellfiremissiles.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-nova-hellfiremissiles.dds"/>
+    </CButton>
+    <CButton id="SiegeDrone" parent="Item">
+        <Icon value="Assets\Textures\btn-item-siegedrone.dds"/>
+        <AlertIcon value="Assets\Textures\btn-item-siegedrone.dds"/>
+    </CButton>
+    <CButton id="TechFoundry">
+        <Icon value="Assets\Textures\btn-upgrade-nova-biomechanicaldroneexplosion.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-nova-biomechanicaldroneexplosion.dds"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+    </CButton>
+    <CButton id="WaveUnit">
+        <Icon value="Assets\Textures\btn-ability-neutral-timedlife.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-timedlife.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+    </CButton>
+    <CButton id="UpgradetoTier2">
+        <Icon value="Assets\Textures\btn-menu-tier2.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-tier2.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <TooltipAppender Validator="MutationGridlock" Text="Button/Appender/MutationGridlock"/>
+    </CButton>
+    <CButton id="UpgradetoTier3">
+        <Icon value="Assets\Textures\btn-menu-tier3.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-tier3.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+        <TooltipAppender Validator="MutationGridlock" Text="Button/Appender/MutationGridlock"/>
+    </CButton>
+    <CButton id="UpgradetoTier4">
+        <Icon value="Assets\Textures\btn-menu-tier4.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-tier4.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <HidesForSimpleText value="0"/>
+    </CButton>
+    <CButton id="InfestedThorBarrage">
+        <Icon value="Assets\Textures\btn-ability-neutral-acidrain.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-neutral-acidrain.dds"/>
+    </CButton>
+    <CButton id="Mutation">
+        <Name value="UI/ScreenArcadeJoin/Info"/>
+        <TooltipAppender Validator="MutationNone" Text="Button/Appender/Mutation"/>
+        <TooltipAppender Validator="MutationCommanders" Text="Button/Appender/MutationCommanders"/>
+        <TooltipAppender Validator="MutationEquipment" Text="Button/Appender/MutationEquipment"/>
+        <TooltipAppender Validator="MutationAccord" Text="Button/Appender/MutationAccord"/>
+        <TooltipAppender Validator="MutationGridlock" Text="Button/Appender/MutationGridlock"/>
+        <TooltipAppender Validator="MutationInsight" Text="Button/Appender/MutationInsight"/>
+        <TooltipAppender Validator="MutationBastion" Text="Button/Appender/MutationBastion"/>
+        <TooltipAppender Validator="MutationSap" Text="Button/Appender/MutationSap"/>
+        <TooltipAppender Validator="MutationDischarge" Text="Button/Appender/MutationDischarge"/>
+        <TooltipAppender Validator="MutationVoid" Text="Button/Appender/MutationVoid"/>
+        <TooltipAppender Validator="MutationBountiful" Text="Button/Appender/MutationBountiful"/>
+        <TooltipAppender Validator="MutationDowntime" Text="Button/Appender/MutationDowntime"/>
+        <TooltipAppender Validator="MutationRescue" Text="Button/Appender/MutationRescue"/>
+        <TooltipAppender Validator="MutationExile" Text="Button/Appender/MutationExile"/>
+        <TooltipAppender Validator="MutationStockpile" Text="Button/Appender/MutationStockpile"/>
+        <TooltipAppender Validator="MutationBrilliance" Text="Button/Appender/MutationBrilliance"/>
+        <TooltipAppender Validator="MutationShroud" Text="Button/Appender/MutationShroud"/>
+        <TooltipAppender Validator="MutationExpansion" Text="Button/Appender/MutationExpansion"/>
+        <TooltipAppender Validator="MutationSuperscan" Text="Button/Appender/MutationSuperscan"/>
+        <TooltipAppender Validator="MutationCovenant" Text="Button/Appender/MutationCovenant"/>
+        <TooltipAppender Validator="MutationOvertime" Text="Button/Appender/MutationOvertime"/>
+        <TooltipAppender Validator="MutationEndurance" Text="Button/Appender/MutationEndurance"/>
+        <TooltipAppender Validator="MutationAura" Text="Button/Appender/MutationAura"/>
+        <TooltipAppender Validator="MutationHallowed" Text="Button/Appender/MutationHallowed"/>
+        <TooltipAppender Validator="MutationStronghold" Text="Button/Appender/MutationStronghold"/>
+        <TooltipAppender Validator="MutationHeroism" Text="Button/Appender/MutationHeroism"/>
+        <TooltipAppender Validator="MutationMercs" Text="Button/Appender/MutationMercs"/>
+        <TooltipAppender Validator="MutationHaste" Text="Button/Appender/MutationHaste"/>
+        <TooltipAppender Validator="MutationUnity" Text="Button/Appender/MutationUnity"/>
+        <TooltipAppender Validator="MutationTychusHomebrew" Text="Button/Appender/MutationTychusHomebrew"/>
+        <TooltipAppender Validator="MutationLizzyBrigade" Text="Button/Appender/MutationLizzyBrigade"/>
+        <TooltipAppender Validator="MutationHeavensDevils" Text="Button/Appender/MutationHeavensDevils"/>
+        <TooltipAppender Validator="MutationHillsCantina" Text="Button/Appender/MutationHillsCantina"/>
+        <TooltipAppender Validator="MutationSynergy" Text="Button/Appender/MutationSynergy"/>
+        <TooltipAppender Validator="MutationEntropy" Text="Button/Appender/MutationEntropy"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <TooltipFlags index="ShowLevel" value="0"/>
+        <TooltipFlags index="ShowResources" value="0"/>
+        <TooltipFlags index="ShowTime" value="0"/>
+        <TooltipFlags index="ShowCooldown" value="0"/>
+        <TooltipFlags index="ShowRequirements" value="0"/>
+        <TooltipFlags index="ShowAutocast" value="0"/>
+        <Icon value="Assets\Textures\btn-menu-gameplayhelp.dds"/>
+        <AlertIcon value="Assets\Textures\btn-menu-gameplayhelp.dds"/>
+    </CButton>
+    <CButton id="EmoteVictoryYellow">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-emote-victoryyellow.dds"/>
+        <AlertIcon value="Assets\Textures\btn-emote-victoryyellow.dds"/>
+        <Hotkey value="Button/Hotkey/Emote"/>
+        <HotkeyAlias value="EmoteVictoryBlue"/>
+    </CButton>
+    <CButton id="EmoteVictoryRed">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-emote-victoryred.dds"/>
+        <AlertIcon value="Assets\Textures\btn-emote-victoryred.dds"/>
+        <Hotkey value="Button/Hotkey/Emote"/>
+        <HotkeyAlias value="EmoteVictoryBlue"/>
+    </CButton>
+    <CButton id="EmoteVictoryBlue">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-emote-victoryblue.dds"/>
+        <AlertIcon value="Assets\Textures\btn-emote-victoryblue.dds"/>
+        <Hotkey value="Button/Hotkey/Emote"/>
+    </CButton>
+    <CButton id="EmoteVictoryConfetti">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\btn-emote-victoryconfetti.dds"/>
+        <AlertIcon value="Assets\Textures\btn-emote-victoryconfetti.dds"/>
+        <Hotkey value="Button/Hotkey/Emote"/>
+        <HotkeyAlias value="EmoteVictoryBlue"/>
+    </CButton>
+    <CButton id="AuraFire">
+        <Icon value="Assets\Textures\ui_treasure_fire.dds"/>
+    </CButton>
+    <CButton id="AuraWater">
+        <Icon value="Assets\Textures\ui_treasure_water.dds"/>
+    </CButton>
+    <CButton id="AuraLife">
+        <Icon value="Assets\Textures\ui_treasure_life.dds"/>
+    </CButton>
+    <CButton id="AuraLight">
+        <Icon value="Assets\Textures\ui_treasure_light.dds"/>
+    </CButton>
+    <CButton id="AuraTime">
+        <Icon value="Assets\Textures\ui_treasure_time.dds"/>
+    </CButton>
+    <CButton id="AuraStorm">
+        <Icon value="Assets\Textures\ui_treasure_storm.dds"/>
+    </CButton>
+    <CButton id="AuraForce">
+        <Icon value="Assets\Textures\ui_treasure_force.dds"/>
+    </CButton>
+    <CButton id="AuraAir">
+        <Icon value="Assets\Textures\ui_treasure_air.dds"/>
+    </CButton>
+    <CButton id="AuraEarth">
+        <Icon value="Assets\Textures\ui_treasure_earth.dds"/>
+    </CButton>
+    <CButton id="AuraBlood">
+        <Icon value="Assets\Textures\ui_treasure_blood.dds"/>
+    </CButton>
+    <CButton id="AuraIce">
+        <Icon value="Assets\Textures\ui_treasure_ice.dds"/>
+    </CButton>
+    <CButton id="AuraShadow">
+        <Icon value="Assets\Textures\ui_treasure_shadow.dds"/>
+    </CButton>
+    <CButton id="SkinSystemOpen">
+        <Icon value="Assets\Textures\btn-ability-neutral-vespene-terran.dds"/>
+        <Name value="UI/ResourceName1"/>
+    </CButton>
+</Catalog>
+
+
+

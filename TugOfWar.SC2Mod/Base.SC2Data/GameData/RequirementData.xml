@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRequirement id="HasStarlightSwitch">
+        <NodeArray index="Use" Link="CountUpgradeStarlightSwitchCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeStarlightSwitchCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasTier1AndExpandedArmaments">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationExpandedArmamentsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasTier2AndExpandedArmaments">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTier2CompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationExpandedArmamentsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasTier3AndExpandedArmaments">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTier3CompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationExpandedArmamentsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationAriseMyChampions">
+        <NodeArray index="Use" Link="CountUpgradeMutationAriseMyChampionsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationExpandedArmaments">
+        <NodeArray index="Use" Link="CountUpgradeMutationExpansionCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="GameModeTutorial">
+        <NodeArray index="Use" Link="CountUpgradeGameModeTutorialCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeGameModeTutorialCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ImpossibleRequirement">
+        <NodeArray index="Use" Link="CountUpgradeImpossibleUpgradeCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeImpossibleUpgradeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherAcidRain">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherAcidRainCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherAshWind">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherAshWindCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherMineralWind">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherMineralWindCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherEnergyWind">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherEnergyWindCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherVoidWind">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherVoidWindCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherLightRain">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherLightRainCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherLightSnow">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherLightSnowCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherSunrays">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherSunraysCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherBloodshardWind">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherBloodshardWindCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaWeatherIcySnow">
+        <NodeArray index="Use" Link="CountUpgradeAreaWeatherIcySnowCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairFractured">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairFracturedCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairDOM">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairDOMCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairDefault">
+        <NodeArray index="Use" Link="NotCountUpgradeAlias_AreaFlair_NotDefaultCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairMansion">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairMansionCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairProtoss">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairProtossCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairPurifier">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairPurifierCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairSlayn">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairSlaynCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairVoid">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairVoidCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AreaFlairXelnaga">
+        <NodeArray index="Use" Link="CountUpgradeAreaFlairXelnagaCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationAlphaTimeline">
+        <NodeArray index="Use" Link="CountUpgradeMutationAlphaTimelineCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationKitchenSink">
+        <NodeArray index="Use" Link="AndCountUpgradeMutationKitchenSinkCompleteOnlyNotOrCountBehaviorRaynorSupplyDropDebuffCompleteOnlyCountBehaviorRaynorSupplyDropRecentlyCastCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationKitchenSinkCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NoSandboxModeInfiniteMinerals">
+        <NodeArray index="Use" Link="NotCountUpgradeSandboxModeInfiniteMineralsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NotYetImplemented">
+        <NodeArray index="Show" Link="CountUpgradeNotYetImplementedCompleteOnly"/>
+    </CRequirement>
+
+    <CRequirement id="SandboxModeNexusDontDie">
+        <NodeArray index="Use" Link="CountUpgradeSandboxModeNexusDontDieCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SandboxModeRaceSelect">
+        <NodeArray index="Use" Link="CountUpgradeSandboxModeRaceSelectCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeSandboxModeRaceSelectCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SeasonalOctober">
+        <NodeArray index="Use" Link="AndCountUpgradeSeasonalEnableCompleteOnlyCountUpgradeSeasonalOctoberCompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeSeasonalEnableCompleteOnlyCountUpgradeSeasonalOctoberCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinKerriganAscended">
+        <NodeArray index="Use" Link="CountUpgradeSkinKerriganAscendedCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinKerriganGhost">
+        <NodeArray index="Use" Link="CountUpgradeSkinKerriganGhostCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinKerriganNone">
+        <NodeArray index="Use" Link="NotOrCountUpgradeSkinKerriganAscendedCompleteOnlyCountUpgradeSkinKerriganGhostCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinLeviathan_Ice">
+        <NodeArray index="Use" Link="CountUpgradeSkinLeviathan_IceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinBrutalisk_Ice">
+        <NodeArray index="Use" Link="CountUpgradeSkinBrutalisk_IceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinSystem">
+        <NodeArray index="Show" Link="AndNotCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StagingAreaNextSpawn">
+        <NodeArray index="Use" Link="CountUpgradeStagingAreaNextSpawnCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerCommanderSelectShowExtendedArmaments">
+        <NodeArray index="Show" Link="AndCountUpgradeWorkerCommanderSelectCompleteOnlyCountUpgradeMutationExpandedArmamentsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationEntropy">
+        <NodeArray index="Use" Link="CountUpgradeMutationEntropyCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationSynergy">
+        <NodeArray index="Use" Link="CountUpgradeMutationSynergyCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="EmoteVictoryRed">
+        <NodeArray index="Use" Link="CountUpgradeEmoteVictoryRedCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationRaidBoss">
+        <NodeArray index="Use" Link="CountUpgradeMutationRaidBossCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationRaidBossCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationTheBestOil">
+        <NodeArray index="Use" Link="CountUpgradeMutationTheBestOilCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationStetapult">
+        <NodeArray index="Use" Link="CountUpgradeMutationStetapultCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationStetapultCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationSN1PSN4P">
+        <NodeArray index="Use" Link="CountUpgradeMutationSN1PSN4PCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel10">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel9CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel10CompleteOnlyNotCountUnitStrikeWeaponryLevel10DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel11">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel10CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel11CompleteOnlyNotCountUnitStrikeWeaponryLevel11DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel12">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel11CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel12CompleteOnlyNotCountUnitStrikeWeaponryLevel12DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel13">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel12CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel13CompleteOnlyNotCountUnitStrikeWeaponryLevel13DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel14">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel13CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel14CompleteOnlyNotCountUnitStrikeWeaponryLevel14DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel15">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel14CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel15CompleteOnlyNotCountUnitStrikeWeaponryLevel15DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel16">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel15CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel16CompleteOnlyNotCountUnitStrikeWeaponryLevel16DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel17">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel16CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel17CompleteOnlyNotCountUnitStrikeWeaponryLevel17DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel18">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel17CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel18CompleteOnlyNotCountUnitStrikeWeaponryLevel18DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="Tier2InProgress">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUnitTier2DummyInProgressOnly"/>
+    </CRequirement>
+    <CRequirement id="Tier3InProgress">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUnitTier3DummyInProgressOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationHeavensDevils">
+        <NodeArray index="Use" Link="CountUpgradeMutationHeavensDevilsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationHillsCantina">
+        <NodeArray index="Use" Link="CountUpgradeMutationHillsCantinaCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationLizzyBrigade">
+        <NodeArray index="Use" Link="CountUpgradeMutationLizzyBrigadeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationTychusHomebrew">
+        <NodeArray index="Use" Link="CountUpgradeMutationTychusHomebrewCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationUnity">
+        <NodeArray index="Use" Link="CountUpgradeMutationUnityCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MercCampPowerLevel1">
+        <NodeArray index="Show" Link="NotCountUpgradeMercCampPowerLevel1CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MercCampPowerLevel2">
+        <NodeArray index="Show" Link="NotCountUpgradeMercCampPowerLevel2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MercCampPowerLevel3">
+        <NodeArray index="Show" Link="NotCountUpgradeMercCampPowerLevel3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationAura">
+        <NodeArray index="Use" Link="CountUpgradeMutationAuraCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationMercs">
+        <NodeArray index="Use" Link="CountUpgradeMutationMercsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationHeroism">
+        <NodeArray index="Use" Link="CountUpgradeMutationHeroismCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationStronghold">
+        <NodeArray index="Use" Link="CountUpgradeMutationStrongholdCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationHaste">
+        <NodeArray index="Use" Link="CountUpgradeMutationHasteCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationHallowed">
+        <NodeArray index="Use" Link="CountUpgradeMutationHallowedCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationEndurance">
+        <NodeArray index="Use" Link="CountUpgradeMutationEnduranceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerCommanderSelectShowStandardRaces">
+        <NodeArray index="Show" Link="AndCountUpgradeWorkerCommanderSelectCompleteOnlyOrCountUpgradeIncludeStandardRacesInCommanderSelectCompleteOnlyCountUpgradeMutationKitchenSinkCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerCommanderSelectShowDeadCommander">
+        <NodeArray index="Use" Link="Not2687146301CountUpgradeMutationAlphaTimelineCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeWorkerCommanderSelectCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinBiomass">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinBiomassCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinCybros">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinCybrosCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinHighlight">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinHighlightCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinHologram">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinHologramCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinJade">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinJadeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinMineral">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinMineralCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinPsionic">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinPsionicCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinRedstone">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinRedstoneCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinSepia">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinSepiaCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinShadow">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinShadowCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinSnow">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinSnowCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinSolarite">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinSolariteCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkinVoid">
+        <NodeArray index="Use" Link="CountUpgradeWorkerSkinVoidCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel1">
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel1CompleteOnlyNotCountUnitStrikeWeaponryLevel1DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel2">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel1CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel2CompleteOnlyNotCountUnitStrikeWeaponryLevel2DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel3">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel2CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel3CompleteOnlyNotCountUnitStrikeWeaponryLevel3DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="MutationOvertime">
+        <NodeArray index="Use" Link="CountUpgradeMutationOvertimeCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationOvertimeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasPremiumModeNotWaveUnit">
+        <NodeArray index="Use" Link="CountUpgradePremiumRewardCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountBehaviorWaveUnitCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="OverdeathDisable">
+        <NodeArray index="Use" Link="CountUpgradeOverdeathDisableCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel4">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel3CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel4CompleteOnlyNotCountUnitStrikeWeaponryLevel4DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel5">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel4CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel5CompleteOnlyNotCountUnitStrikeWeaponryLevel5DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel6">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel5CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel6CompleteOnlyNotCountUnitStrikeWeaponryLevel6DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel7">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel6CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel7CompleteOnlyNotCountUnitStrikeWeaponryLevel7DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel8">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel7CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel8CompleteOnlyNotCountUnitStrikeWeaponryLevel8DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="StrikeWeaponryLevel9">
+        <NodeArray index="Use" Link="CountUpgradeStrikeWeaponryLevel8CompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUpgradeTier4CompleteOnlyNotCountUpgradeStrikeWeaponryLevel9CompleteOnlyNotCountUnitStrikeWeaponryLevel9DummyQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="WorkerAuraAvailable">
+        <NodeArray index="Use" Link="CountUnitAlias_AnyUnitCompleteOnly2132468540"/>
+        <NodeArray index="Show" Link="AndCountUpgradeWorkerAuraAvailableCompleteOnlyNotCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuAbilityControl">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuAbilityControlCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuDiscord">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuDiscordCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuLiveScoreboard">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuLiveScoreboardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuBlacklist">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuBlacklistCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuMastery">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuMasteryCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuMasteryCode">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuMasteryCodeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuStagingAreaCustomization">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuStagingAreaCustomizationCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSubmenuWorkerSelect">
+        <NodeArray index="Show" Link="CountUpgradeWorkerSubmenuWorkerSelectCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationCovenant">
+        <NodeArray index="Use" Link="CountUpgradeMutationCovenantCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationCovenantCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationExpansion">
+        <NodeArray index="Use" Link="CountUpgradeMutationExpansionCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationCommanders">
+        <NodeArray index="Use" Link="CountUpgradeMutationCommandersCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AFKTimerComplete">
+        <NodeArray index="Use" Link="CountUpgradePlayerIsAFKCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ScanUse">
+        <NodeArray index="Use" Link="CountUpgradeTier2CompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AnyUnit">
+        <NodeArray index="Use" Link="CountUnitAlias_AnyUnitCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationBrilliance">
+        <NodeArray index="Use" Link="CountUpgradeMutationBrillianceCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationShroud">
+        <NodeArray index="Use" Link="OrCountUpgradeMutationShroudCompleteOnlyCountUpgradeMutationInsightCompleteOnly"/>
+        <NodeArray index="Show" Link="OrCountUpgradeMutationShroudCompleteOnlyCountUpgradeMutationInsightCompleteOnly"/>
+    </CRequirement>
+
+
+    <CRequirement id="WorkerRaceSelectShow">
+        <NodeArray index="Use" Link="CountUpgradeMutationCovenantCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationCovenantCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerCommanderSelectShow">
+        <NodeArray index="Show" Link="CountUpgradeWorkerCommanderSelectCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSelectProtoss">
+        <NodeArray index="Use" Link="CountUpgradeMutationCovenantCompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUnitWorkerProtossCompleteOnlyCountUpgradeMutationCovenantCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSelectTerran">
+        <NodeArray index="Use" Link="CountUpgradeMutationCovenantCompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUnitWorkerTerranCompleteOnlyCountUpgradeMutationCovenantCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSelectZerg">
+        <NodeArray index="Use" Link="CountUpgradeMutationCovenantCompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUnitWorkerZergCompleteOnlyCountUpgradeMutationCovenantCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerUnits">
+        <NodeArray index="Show" Link="NotCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationStockpile">
+        <NodeArray index="Use" Link="CountUpgradeMutationStockpileCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationDischarge">
+        <NodeArray index="Use" Link="CountUpgradeMutationDischargeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationVoid">
+        <NodeArray index="Use" Link="CountUpgradeMutationVoidCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationSuperscan">
+        <NodeArray index="Use" Link="CountUpgradeMutationSuperscanCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationSuperscanCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinBiomass">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinBiomassCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinCybros">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinCybrosCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinHighlight">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinHighlightCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinHologram">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinHologramCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinJade">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinJadeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinMineral">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinMineralCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinPsionic">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinPsionicCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinRedstone">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinRedstoneCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinSepia">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinSepiaCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinShadow">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinShadowCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinSnow">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinSnowCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinSolarite">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinSolariteCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RefinerySkinVoid">
+        <NodeArray index="Use" Link="CountUpgradeRefinerySkinVoidCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinHighlight">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinHighlightCompleteOnlyAtUnitCountBehaviorSkinHighlightPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinSnow">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinSnowCompleteOnlyAtUnitCountBehaviorSkinSnowPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinSepia">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinSepiaCompleteOnlyAtUnitCountBehaviorSkinSepiaPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinJade">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinJadeCompleteOnlyAtUnitCountBehaviorSkinJadePrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeChar">
+        <NodeArray index="Use" Link="CountUpgradeThemeCharCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeBelShir">
+        <NodeArray index="Use" Link="CountUpgradeThemeBelShirCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeShakuras">
+        <NodeArray index="Use" Link="CountUpgradeThemeShakurasCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeKaldir">
+        <NodeArray index="Use" Link="CountUpgradeThemeKaldirCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeMarSara">
+        <NodeArray index="Use" Link="CountUpgradeThemeMarSaraCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeSlayn">
+        <NodeArray index="Use" Link="CountUpgradeThemeSlaynCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeZerus">
+        <NodeArray index="Use" Link="CountUpgradeThemeZerusCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThemeElsecaro">
+        <NodeArray index="Use" Link="CountUpgradeThemeElsecaroCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnitIsBanned">
+        <NodeArray index="Use" Link="CountUpgradeUnitIsBannedCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnitIsBannedUnit">
+        <NodeArray index="Use" Link="CountUpgradeUnitIsBannedCompleteOnly"/>
+        <NodeArray index="Show" Link="CountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="WorkerResearch">
+        <NodeArray index="Use" Link="CountUnitAlias_AnyUnitCompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="WorkerSkins">
+        <NodeArray index="Use" Link="CountUpgradePremiumRewardCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationNone">
+        <NodeArray index="Use" Link="NotCountUpgradeAlias_MutationCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationAccord">
+        <NodeArray index="Use" Link="CountUpgradeMutationAccordCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationDowntime">
+        <NodeArray index="Use" Link="CountUpgradeMutationDowntimeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationExile">
+        <NodeArray index="Use" Link="CountUpgradeMutationExileCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationEquipment">
+        <NodeArray index="Use" Link="CountUpgradeMutationEquipmentCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationRescue">
+        <NodeArray index="Use" Link="CountUpgradeMutationRescueCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradeMutationRescueCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationGridlock">
+        <NodeArray index="Use" Link="CountUpgradeMutationGridlockCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationSap">
+        <NodeArray index="Use" Link="CountUpgradeMutationSapCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationBountiful">
+        <NodeArray index="Use" Link="CountUpgradeMutationBountifulCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationInsight">
+        <NodeArray index="Use" Link="CountUpgradeMutationInsightCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MutationBastion">
+        <NodeArray index="Use" Link="CountUpgradeMutationBastionCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AFKTimerWarning">
+        <NodeArray index="Use" Link="CountBehaviorAFKTimerUnitWarningCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="MineralFieldAvailable">
+        <NodeArray index="Use" Link="CountUnitAlias_MineralFieldAvailableCompleteOnly"/>
+        <NodeArray index="Show" Link="AndCountUnitAlias_MineralFieldCompleteOnlyNotCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinShadow">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinShadowCompleteOnlyAtUnitCountBehaviorSkinShadowPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NoMineralIncomeBonus">
+        <NodeArray index="Use" Link="NotCountUpgradeMineralIncomeBonusCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAutoMineralFieldsActiveCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasMineralIncomeBonus">
+        <NodeArray index="Use" Link="CountUpgradeMineralIncomeBonusCompleteOnly"/>
+        <NodeArray index="Show" Link="NotCountUpgradeAutoMineralFieldsActiveCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasPremiumModeUse">
+        <NodeArray index="Use" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NoDisableDummyWeapons">
+        <NodeArray index="Use" Link="NotCountUpgradeDisableDummyWeaponsCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasWaveUnit">
+        <NodeArray index="Use" Link="CountBehaviorWaveUnitCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorWaveUnitCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="SkinBiomass">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinBiomassCompleteOnlyAtUnitCountBehaviorSkinBiomassPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinCybros">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinCybrosCompleteOnlyAtUnitCountBehaviorSkinCybrosPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinHologram">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinHologramCompleteOnlyAtUnitCountBehaviorSkinHologramPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinMineral">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinMineralCompleteOnlyAtUnitCountBehaviorSkinMineralPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinPsionic">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinPsionicCompleteOnlyAtUnitCountBehaviorSkinPsionicPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinRedstone">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinRedstoneCompleteOnlyAtUnitCountBehaviorSkinRedstonePrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinRemove">
+        <NodeArray index="Show" Link="CountBehaviorAlias_SkinCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="SkinSolarite">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinSolariteCompleteOnlyAtUnitCountBehaviorSkinSolaritePrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="SkinVoid">
+        <NodeArray index="Use" Link="NotOrCountBehaviorSkinVoidCompleteOnlyAtUnitCountBehaviorSkinVoidPrecursorCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="TrophyProtossGames">
+        <NodeArray index="Use" Link="NotCountUnitTrophyProtossGamesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TrophyProtossVictories">
+        <NodeArray index="Use" Link="NotCountUnitTrophyProtossVictoriesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TrophyTerranVictories">
+        <NodeArray index="Use" Link="NotCountUnitTrophyTerranVictoriesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TrophyTerranGames">
+        <NodeArray index="Use" Link="NotCountUnitTrophyTerranGamesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TrophyTotalLosses">
+        <NodeArray index="Use" Link="NotCountUnitTrophyTotalLossesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TrophyZergVictories">
+        <NodeArray index="Use" Link="NotCountUnitTrophyZergVictoriesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TrophyZergGames">
+        <NodeArray index="Use" Link="NotCountUnitTrophyZergGamesQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="TrophyTotalKills">
+        <NodeArray index="Use" Link="NotCountUnitTrophyTotalKillsQueuedOrBetter"/>
+    </CRequirement>
+    <CRequirement id="HasPremiumMode">
+        <NodeArray index="Use" Link="CountUpgradePremiumRewardCompleteOnly"/>
+        <NodeArray index="Show" Link="CountUpgradePremiumRewardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasPremiumModeTestWorker">
+        <NodeArray index="Use" Link="CountUpgradePremiumRewardCompleteOnly3263504268"/>
+        <NodeArray index="Show" Link="CountUpgradeWorkerCommanderSelectCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasTier2">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTier2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasTier3">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTier3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="HasTier4">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="CountUpgradeTier4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NoTier2">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="NotCountUpgradeTier2CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NoTier3">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="NotCountUpgradeTier3CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NoTier4">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="NotCountUpgradeTier4CompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Tier2Upgrade">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="NotOrCountUnitTier2DummyQueuedOrBetterCountUpgradeTier2CompleteOnlyCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Tier3Upgrade">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="OrCountUnitTier2DummyQueuedOrBetterCountUpgradeTier2QueuedOrBetter"/>
+        <NodeArray index="Show" Link="NotOrCountUnitTier3DummyQueuedOrBetterCountUpgradeTier3CompleteOnlyCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Tier4Upgrade">
+        <EditorCategories value="Race:Neutral,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="Or1161497588CountUnitTier3DummyQueuedOrBetterCountUpgradeTier3QueuedOrBetter"/>
+        <NodeArray index="Show" Link="AndNotOrCountUnitTier4DummyQueuedOrBetterCountUpgradeTier4CompleteOnlyCountUpgradeHideWorkerCommandCardCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="AllowMoveWaveUnit">
+        <NodeArray index="Use" Link="CountBehaviorAllowMoveWaveUnitCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorAllowMoveWaveUnitCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseSell">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Use" Link="NotCountBehaviorSellFullCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="AndCountBehaviorUnitSpawnerCompleteOnlyAtUnitNotCountBehaviorNoSellPartialCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseSellFull">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Show" Link="AndCountBehaviorUnitSpawnerCompleteOnlyAtUnitCountBehaviorSellFullCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="UseSellNone">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeImpossibleUpgradeCompleteOnly"/>
+        <NodeArray index="Show" Link="CountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NotSelling">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountBehaviorIsSellingCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="Reposition">
+        <NodeArray index="Use" Link="CountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="PlacementFacingNE">
+        <NodeArray index="Use" Link="CountUpgradePlacementFacingNECompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="PlacementFacingNW">
+        <NodeArray index="Use" Link="CountUpgradePlacementFacingNWCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="PlacementFacingSE">
+        <NodeArray index="Use" Link="CountUpgradePlacementFacingSECompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="PlacementFacingSW">
+        <NodeArray index="Use" Link="NotOrCountUpgradePlacementFacingNECompleteOnlyCountUpgradePlacementFacingNWCompleteOnlyCountUpgradePlacementFacingSECompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="IsUnitSpawner">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Show" Link="CountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NotUnitSpawner">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Show" Link="NotCountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="IsUnitSpawnerandTier2">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTier2CompleteOnly"/>
+        <NodeArray index="Show" Link="CountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="IsUnitSpawnerandTier3">
+        <EditorCategories value="Race:Neutral,TechType:Ability"/>
+        <NodeArray index="Use" Link="CountUpgradeTier3CompleteOnly"/>
+        <NodeArray index="Show" Link="CountBehaviorUnitSpawnerCompleteOnlyAtUnit"/>
+    </CRequirement>
+    <CRequirement id="RacialBaseClusterAir">
+        <NodeArray index="Use" Link="LTECountUpgradeRacialBaseClusterAirCompleteOnlyCountUpgradeRacialBaseClusterTechCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RacialBaseClusterProduction">
+        <NodeArray index="Use" Link="LTECountUpgradeRacialBaseClusterProductionCompleteOnlyAndCountUpgradeRacialBaseClusterAdvancedCompleteOnlyCountUpgradeRacialBaseClusterAirCompleteOnlyCountUpgradeRacialBaseClusterTechCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="RacialBaseClusterAdvanced">
+        <NodeArray index="Use" Link="LTECountUpgradeRacialBaseClusterAdvancedCompleteOnlyAndCountUpgradeRacialBaseClusterAirCompleteOnlyCountUpgradeRacialBaseClusterTechCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ChampionReviveUse">
+        <NodeArray index="Use" Link="CountUpgradeChampionWaitingForRespawnCompleteOnly"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeHideWorkerCommandCardCompleteOnlyOrCountUpgradeMutationAriseMyChampionsCompleteOnly"/>
+    </CRequirement>
+</Catalog>

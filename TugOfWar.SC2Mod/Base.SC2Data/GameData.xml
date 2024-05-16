@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Includes>
+    <Catalog path="RacialData/AbilData.xml"/>
+    <Catalog path="RacialData/ActorData.xml"/>
+    <Catalog path="RacialData/AlertData.xml"/>
+    <Catalog path="RacialData/AttachMethodData.xml"/>
+    <Catalog path="RacialData/BehaviorData.xml"/>
+    <Catalog path="RacialData/ButtonData.xml"/>
+    <Catalog path="RacialData/CameraData.xml"/>
+    <Catalog path="RacialData/CommanderData.xml"/>
+    <Catalog path="RacialData/EffectData.xml"/>
+    <Catalog path="RacialData/FootprintData.xml"/>
+    <Catalog path="RacialData/GameData.xml"/>
+    <Catalog path="RacialData/GameUIData.xml"/>
+    <Catalog path="RacialData/ItemClassData.xml"/>
+    <Catalog path="RacialData/ItemContainerData.xml"/>
+    <Catalog path="RacialData/ItemData.xml"/>
+    <Catalog path="RacialData/KineticData.xml"/>
+    <Catalog path="RacialData/LightData.xml"/>
+    <Catalog path="RacialData/ModelData.xml"/>
+    <Catalog path="RacialData/MoverData.xml"/>
+    <Catalog path="RacialData/RaceData.xml"/>
+    <Catalog path="RacialData/RequirementData.xml"/>
+    <Catalog path="RacialData/RequirementNodeData.xml"/>
+    <Catalog path="RacialData/ScoreResultData.xml"/>
+    <Catalog path="RacialData/ScoreValueData.xml"/>
+    <Catalog path="RacialData/SkinData.xml"/>
+    <Catalog path="RacialData/SoundData.xml"/>
+    <Catalog path="RacialData/TargetSortData.xml"/>
+    <Catalog path="RacialData/TerrainTexData.xml"/>
+    <Catalog path="RacialData/TextureData.xml"/>
+    <Catalog path="RacialData/TurretData.xml"/>
+    <Catalog path="RacialData/UnitData.xml"/>
+    <Catalog path="RacialData/UpgradeData.xml"/>
+    <Catalog path="RacialData/UserData.xml"/>
+    <Catalog path="RacialData/ValidatorData.xml"/>
+    <Catalog path="RacialData/WaterData.xml"/>
+    <Catalog path="RacialData/WeaponData.xml"/>
+    <Catalog path="GameData/DecorationsData.xml"/>
+    <Catalog path="CustomData/Shared.xml"/>
+    <Catalog path="CustomData/Custom.xml"/>
+    <Catalog path="CustomData/Other.xml"/>
+    <Catalog path="BaseData/Terran.xml"/>
+    <Catalog path="BaseData/Zerg.xml"/>
+    <Catalog path="BaseData/Protoss.xml"/>
+
+
+
+    <!--    <Catalog path="CoopData/Abathur.xml"/>-->
+    <!--    <Catalog path="CoopData/Alarak.xml"/>-->
+    <!--    <Catalog path="CoopData/Artanis.xml"/>-->
+    <!--    <Catalog path="CoopData/Dehaka.xml"/>-->
+    <!--    <Catalog path="CoopData/Fenix.xml"/>-->
+    <!--    <Catalog path="CoopData/Horner.xml"/>-->
+    <!--    <Catalog path="CoopData/Karax.xml"/>-->
+    <!--    <Catalog path="CoopData/Kerrigan.xml"/>-->
+    <!--    <Catalog path="CoopData/Mengsk.xml"/>-->
+    <!--    <Catalog path="CoopData/Nova.xml"/>-->
+    <!--    <Catalog path="CoopData/Raynor.xml"/>-->
+    <!--    <Catalog path="CoopData/Stetmann.xml"/>-->
+    <!--    <Catalog path="CoopData/Stukov.xml"/>-->
+    <!--    <Catalog path="CoopData/Swann.xml"/>-->
+    <!--    <Catalog path="CoopData/Tychus.xml"/>-->
+    <!--    <Catalog path="CoopData/Vorazun.xml"/>-->
+    <!--    <Catalog path="CoopData/Zagara.xml"/>x-->
+    <!--    <Catalog path="CoopData/Zeratul.xml"/>-->
+
+
+    <Catalog path="CustomData/Keiron.xml"/>
+    <Catalog path="CustomData/Genetron.xml"/>
+    <Catalog path="CustomData/Xayid.xml"/>
+    <Catalog path="CustomData/APL.xml"/>
+    <Catalog path="CustomData/Hybrids.xml"/>
+    <Catalog path="CustomData/UED.xml"/>
+    <Catalog path="CustomData/Dragon.xml"/>
+    <Catalog path="StrikeData/DecorationsData.xml"/>
+
+
+
+
+<!--    <Catalog path="CustomData/Umojan.xml"/>-->
+<!--    <Catalog path="NexusData/Gerard.xml"/>-->
+<!--    <Catalog path="NexusData/Gestalt.xml"/>-->
+<!--    <Catalog path="NexusData/Hanson.xml"/>-->
+<!--    <Catalog path="NexusData/Karass.xml"/>-->
+<!--    <Catalog path="NexusData/Nafash.xml"/>-->
+<!--    <Catalog path="NexusData/Overmind.xml"/>-->
+<!--    <Catalog path="NexusData/Reigel.xml"/>-->
+<!--    <Catalog path="NexusData/Rohana.xml"/>-->
+<!--    <Catalog path="NexusData/Selendis.xml"/>-->
+<!--    <Catalog path="NexusData/Tassadar.xml"/>-->
+<!--    <Catalog path="NexusData/Tosh.xml"/>-->
+<!--    <Catalog path="NexusData/Ulrezaj.xml"/>-->
+<!--    <Catalog path="NexusData/Valerian.xml"/>-->
+<!--    <Catalog path="WarData/Zhakul.xml"/>-->
+<!--    <Catalog path="WarData/Human.xml"/>-->
+<!--    <Catalog path="WarData/NightElf.xml"/>-->
+<!--    <Catalog path="WarData/Orc.xml"/>-->
+<!--    <Catalog path="WarData/Tyranid.xml"/>-->
+<!--    <Catalog path="WarData/Undead.xml"/>-->
+</Includes>
