@@ -1,8 +1,11 @@
-get the cache
-C:\ProgramData\Blizzard Entertainment\Battle.net\Cache
+# All Races Dependencies
 
-https://github.com/duckiesduckies/SC2-custom-data-assets-by-duckies
+This repository contains Dependency mods sources for Star Craft 2 All Races Project
 
-unit tester advanced and has both a mod and arcade version
+## installation
 
-https://www.sc2mapster.com/projects/sc-evolution-complete-for-creators/files/4554945
+Clone it to `StarCraft II\MODS\all-races-mods\dependencies`
+
+```
+git clone Star-Mods/mods-dependencies <SC2Directory>/MODS/all-races-mods/dependencies
+```
