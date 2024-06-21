@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CBehaviorBuff id="KothHillRadius">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification Radar="9" RadarFilters="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried,Cloaked"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KothHillDeathZoneRadius">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification Radar="20" RadarFilters="-;Neutral,RawResource,HarvestableResource,Missile,Destructible,Buried,Cloaked"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="death_zone_damage">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="death_zone_protected"/>
+        <DisableValidatorArray value="death_zone_protected_permanent"/>
+        <DisableValidatorArray value="death_zone_protected_queen"/>
+        <Period value="1.4"/>
+        <PeriodicEffect value="death_zone_damage"/>
+        <Modification>
+            <BehaviorCategoriesEnable index="User15" value="1"/>
+            <BehaviorClassEnableArray index="CBehaviorBuff" value="1"/>
+            <BehaviorLinkEnableArray value="death_zone_damage"/>
+        </Modification>
+        <InfoIcon value="Assets\Textures\decaldarkhazard01_diffuse.dds"/>
+        <MaxStackCount value="100"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="blood_lust_damage">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="IsStructure"/>
+        <DisableValidatorArray value="NotUnderConstruction"/>
+        <Period value="1.4"/>
+        <PeriodicEffect value="blood_lust_damage"/>
+        <Modification>
+            <VitalRegenMultiplier index="Life" value="-1"/>
+            <BehaviorCategoriesEnable index="User15" value="1"/>
+            <BehaviorClassEnableArray index="CBehaviorBuff" value="1"/>
+            <BehaviorLinkEnableArray value="blood_lust_damage"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="death_zone_protect">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="83"/>
+        <InfoIcon value="Assets\Textures\shield_blue.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="death_zone_protection_permanent">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoIcon value="Assets\Textures\shield_blue.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="death_zone_protection_permanent_queen">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoIcon value="Assets\Textures\shield_blue.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="disable_hp_regen">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="death_zone_protected"/>
+        <DisableValidatorArray value="death_zone_protected_permanent"/>
+        <DisableValidatorArray value="death_zone_protected_queen"/>
+        <Modification>
+            <VitalRegenMultiplier index="Life" value="-1"/>
+        </Modification>
+    </CBehaviorBuff>
+</Catalog>

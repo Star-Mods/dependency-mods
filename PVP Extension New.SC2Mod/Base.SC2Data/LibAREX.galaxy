@@ -1,0 +1,639 @@
+include "TriggerLibs/NativeLib"
+include "LibARRA"
+include "LibVSAI"
+include "LibARMP"
+include "LibARZC"
+include "LibARMB"
+include "LibC6A42A55"
+
+include "LibAREX_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: ALL RACES MAP EXTENSION
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void libAREX_InitLibraries () {
+    libNtve_InitVariables();
+    libARRA_InitVariables();
+    libVSAI_InitVariables();
+    libARMP_InitVariables();
+    libARZC_InitVariables();
+    libARMB_InitVariables();
+    libC6A42A55_InitVariables();
+}
+
+// Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: Game Attributes
+//--------------------------------------------------------------------------------------------------
+bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    string lv_aG_Supplies;
+    string lv_aG_Resources;
+    string lv_aG_Zombies;
+    string lv_aG_Money;
+    string lv_aG_Bounty;
+    string lv_aG_Mode;
+    string lv_aG_Monobattle;
+    string lv_aG_KOTH_DeathZone;
+    string lv_aG_KOTH_Vision;
+    string lv_aG_KOTH_ControlUnits;
+    string lv_aG_KOTH_PreparationTime;
+    string lv_aG_KOTH_WinTimer;
+    string lv_aG_KillBounty;
+    string lv_aG_BloodLust;
+    string lv_availableFactions;
+    string lv_playerFactionGameAtrribute;
+    fixed lv_zC_Difficulty;
+    fixed lv_zC_BountyMinerals;
+    fixed lv_zC_BountyVespene;
+    bool lv_kOTH_Vision;
+    int lv_kOTH_DeathZone;
+    bool lv_kOTH_OnlyGround;
+    bool lv_kOTH_OnlyVisible;
+    int lv_kOTH_PreparationTime;
+    int lv_kOTH_WinTimer;
+    int lv_kOTH_KillBounty;
+
+    // Automatic Variable Declarations
+    playergroup auto246D2D84_g;
+    int auto246D2D84_var;
+    string auto2E5D6861_val;
+    string auto3944F19B_val;
+    string auto94E226EB_val;
+    string auto74B0C66F_val;
+    string autoAD3B0E42_val;
+    string autoCE1E1E9C_val;
+    string auto8943CBBE_val;
+    string autoAFDADCFB_val;
+    string auto5D4A1FE7_val;
+    string auto2D192A97_val;
+    string auto9028A8C4_val;
+    string autoDBDBE053_val;
+    string autoC3CA774C_val;
+    string auto47887B5C_val;
+
+    // Variable Initialization
+    lv_aG_Supplies = GameAttributeGameValue("2");
+    lv_aG_Resources = GameAttributeGameValue("3");
+    lv_aG_Zombies = GameAttributeGameValue("4");
+    lv_aG_Money = GameAttributeGameValue("5");
+    lv_aG_Bounty = GameAttributeGameValue("6");
+    lv_aG_Mode = GameAttributeGameValue("7");
+    lv_aG_Monobattle = GameAttributeGameValue("8");
+    lv_aG_KOTH_DeathZone = GameAttributeGameValue("12");
+    lv_aG_KOTH_Vision = GameAttributeGameValue("13");
+    lv_aG_KOTH_ControlUnits = GameAttributeGameValue("14");
+    lv_aG_KOTH_PreparationTime = GameAttributeGameValue("15");
+    lv_aG_KOTH_WinTimer = GameAttributeGameValue("17");
+    lv_aG_KillBounty = GameAttributeGameValue("18");
+    lv_aG_BloodLust = GameAttributeGameValue("19");
+    lv_availableFactions = "ALL";
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    lv_playerFactionGameAtrribute = "16";
+    libARMP_gf_SetAvailableFactions(lv_availableFactions);
+    auto246D2D84_g = libARMP_gf_ARCGetActivePlayers();
+    auto246D2D84_var = -1;
+    while (true) {
+        auto246D2D84_var = PlayerGroupNextPlayer(auto246D2D84_g, auto246D2D84_var);
+        if (auto246D2D84_var < 0) { break; }
+        libARMP_gf_SetPlayerRaceARC(auto246D2D84_var, libARMP_gf_GetCustomRace(auto246D2D84_var, lv_playerFactionGameAtrribute, lv_availableFactions));
+    }
+    auto2E5D6861_val = lv_aG_Money;
+    if (auto2E5D6861_val == "0002") {
+        libARMP_gf_SetInitialResources("Rich");
+    }
+    else if (auto2E5D6861_val == "0003") {
+        libARMP_gf_SetInitialResources("Jeff Bezos");
+    }
+    else {
+    }
+    auto3944F19B_val = lv_aG_Resources;
+    if (auto3944F19B_val == "0003") {
+        libARMP_gf_SetHarvestableResources("Rich");
+    }
+    else if (auto3944F19B_val == "0002") {
+        libARMP_gf_SetHarvestableResources("BGH");
+    }
+    else if (auto3944F19B_val == "0004") {
+        libARMP_gf_SetHarvestableResources("BGH Rich");
+    }
+    else {
+    }
+    auto94E226EB_val = lv_aG_Supplies;
+    if (auto94E226EB_val == "0001") {
+        libARMP_gf_SetSupplyCap("100");
+    }
+    else if (auto94E226EB_val == "0003") {
+        libARMP_gf_SetSupplyCap("300");
+    }
+    else if (auto94E226EB_val == "0005") {
+        libARMP_gf_SetSupplyCap("400");
+    }
+    else if (auto94E226EB_val == "0004") {
+        libARMP_gf_SetSupplyCap("500");
+    }
+    else if (auto94E226EB_val == "0006") {
+        libARMP_gf_SetSupplyCap("1000");
+    }
+    else {
+    }
+    auto74B0C66F_val = lv_aG_Bounty;
+    if (auto74B0C66F_val == "0001") {
+        lv_kOTH_KillBounty = 10;
+    }
+    else if (auto74B0C66F_val == "0002") {
+        lv_kOTH_KillBounty = 20;
+    }
+    else if (auto74B0C66F_val == "0003") {
+        lv_kOTH_KillBounty = 30;
+    }
+    else if (auto74B0C66F_val == "0004") {
+        lv_kOTH_KillBounty = 40;
+    }
+    else if (auto74B0C66F_val == "0005") {
+        lv_kOTH_KillBounty = 50;
+    }
+    else if (auto74B0C66F_val == "0006") {
+        lv_kOTH_KillBounty = 60;
+    }
+    else if (auto74B0C66F_val == "0007") {
+        lv_kOTH_KillBounty = 70;
+    }
+    else {
+    }
+    if ((lv_kOTH_KillBounty != 0)) {
+        libARMP_gf_Bountyinit(lv_kOTH_KillBounty);
+    }
+
+    autoAD3B0E42_val = lv_aG_Mode;
+    if (autoAD3B0E42_val == "0002") {
+        libARMP_gf_InitializeMeleeGame();
+    }
+    else if (autoAD3B0E42_val == "0001") {
+        autoCE1E1E9C_val = lv_aG_Bounty;
+        if (autoCE1E1E9C_val == "0004") {
+            lv_zC_BountyMinerals = 0.0;
+            lv_zC_BountyVespene = 0.0;
+        }
+        else if (autoCE1E1E9C_val == "0001") {
+            lv_zC_BountyMinerals = 5.0;
+            lv_zC_BountyVespene = 2.0;
+        }
+        else if (autoCE1E1E9C_val == "0002") {
+            lv_zC_BountyMinerals = 10.0;
+            lv_zC_BountyVespene = 5.0;
+        }
+        else if (autoCE1E1E9C_val == "0003") {
+            lv_zC_BountyMinerals = 20.0;
+            lv_zC_BountyVespene = 10.0;
+        }
+        else {
+        }
+        auto8943CBBE_val = lv_aG_Zombies;
+        if (auto8943CBBE_val == "0005") {
+            lv_zC_Difficulty = 0.0;
+        }
+        else if (auto8943CBBE_val == "0001") {
+            lv_zC_Difficulty = 1.0;
+        }
+        else if (auto8943CBBE_val == "0002") {
+            lv_zC_Difficulty = 2.0;
+        }
+        else if (auto8943CBBE_val == "0003") {
+            lv_zC_Difficulty = 3.0;
+        }
+        else if (auto8943CBBE_val == "0004") {
+            lv_zC_Difficulty = 4.0;
+        }
+        else {
+        }
+        libARZC_gf_Zombiecatastrophe(lv_zC_Difficulty, lv_zC_BountyMinerals, lv_zC_BountyVespene);
+        libARMP_gf_InitializeMeleeGame();
+    }
+    else if (autoAD3B0E42_val == "0004") {
+        autoAFDADCFB_val = lv_aG_KOTH_WinTimer;
+        if (autoAFDADCFB_val == "0001") {
+            lv_kOTH_WinTimer = 30;
+        }
+        else if (autoAFDADCFB_val == "0002") {
+            lv_kOTH_WinTimer = 45;
+        }
+        else if (autoAFDADCFB_val == "0003") {
+            lv_kOTH_WinTimer = 60;
+        }
+        else if (autoAFDADCFB_val == "0004") {
+            lv_kOTH_WinTimer = 75;
+        }
+        else if (autoAFDADCFB_val == "0005") {
+            lv_kOTH_WinTimer = 90;
+        }
+        else if (autoAFDADCFB_val == "0007") {
+            lv_kOTH_WinTimer = 105;
+        }
+        else if (autoAFDADCFB_val == "0006") {
+            lv_kOTH_WinTimer = 120;
+        }
+        else {
+            lv_kOTH_WinTimer = 30;
+        }
+        auto5D4A1FE7_val = lv_aG_KOTH_PreparationTime;
+        if (auto5D4A1FE7_val == "0002") {
+            lv_kOTH_PreparationTime = 5;
+        }
+        else if (auto5D4A1FE7_val == "0003") {
+            lv_kOTH_PreparationTime = 10;
+        }
+        else if (auto5D4A1FE7_val == "0004") {
+            lv_kOTH_PreparationTime = 15;
+        }
+        else if (auto5D4A1FE7_val == "0005") {
+            lv_kOTH_PreparationTime = 20;
+        }
+        else if (auto5D4A1FE7_val == "0006") {
+            lv_kOTH_PreparationTime = 25;
+        }
+        else {
+            lv_kOTH_PreparationTime = 5;
+        }
+        auto2D192A97_val = lv_aG_KOTH_Vision;
+        if (auto2D192A97_val == "0002") {
+            lv_kOTH_Vision = true;
+        }
+        else {
+        }
+        auto9028A8C4_val = lv_aG_KOTH_DeathZone;
+        if (auto9028A8C4_val == "0001") {
+            lv_kOTH_DeathZone = 20;
+        }
+        else {
+        }
+        autoDBDBE053_val = lv_aG_KOTH_ControlUnits;
+        if (autoDBDBE053_val == "0003") {
+            lv_kOTH_OnlyGround = true;
+        }
+        else if (autoDBDBE053_val == "0002") {
+            lv_kOTH_OnlyVisible = true;
+        }
+        else if (autoDBDBE053_val == "0005") {
+            lv_kOTH_OnlyGround = true;
+            lv_kOTH_OnlyVisible = true;
+        }
+        else {
+        }
+        autoC3CA774C_val = lv_aG_BloodLust;
+        if (autoC3CA774C_val == "0002") {
+            libC6A42A55_gf_blood_lust_init(lv_kOTH_PreparationTime, true);
+        }
+        else {
+        }
+        libC6A42A55_gf_KOTH(lv_kOTH_Vision, lv_kOTH_OnlyVisible, lv_kOTH_OnlyGround, (lv_kOTH_PreparationTime * 60), lv_kOTH_WinTimer, lv_kOTH_DeathZone);
+        libARMP_gf_InitializeMeleeGame();
+    }
+    else if (autoAD3B0E42_val == "0003") {
+        auto47887B5C_val = lv_aG_Monobattle;
+        if (auto47887B5C_val == "0001") {
+            libARMB_gf_Monobattle(libARMB_ge_MonobattleMode_DraftSelection);
+        }
+        else if (auto47887B5C_val == "0002") {
+            libARMB_gf_Monobattle(libARMB_ge_MonobattleMode_BlindRandom);
+        }
+        else if (auto47887B5C_val == "0003") {
+            libARMB_gf_Monobattle(libARMB_ge_MonobattleMode_SingleDraft);
+        }
+        else if (auto47887B5C_val == "0004") {
+            libARMB_gf_Monobattle(libARMB_ge_MonobattleMode_TierDraft);
+        }
+        else {
+        }
+    }
+    else {
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libAREX_gt_GameAttributes_Init () {
+    libAREX_gt_GameAttributes = TriggerCreate("libAREX_gt_GameAttributes_Func");
+    TriggerAddEventMapInit(libAREX_gt_GameAttributes);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Custom AI Triggers
+//--------------------------------------------------------------------------------------------------
+bool libAREX_gt_CustomAITriggers_Func (bool testConds, bool runActions) {
+    // Automatic Variable Declarations
+    playergroup autoCFBF69D6_g;
+    int autoCFBF69D6_var;
+    string auto6760E9AA_val;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    autoCFBF69D6_g = PlayerGroupAll();
+    autoCFBF69D6_var = -1;
+    while (true) {
+        autoCFBF69D6_var = PlayerGroupNextPlayer(autoCFBF69D6_g, autoCFBF69D6_var);
+        if (autoCFBF69D6_var < 0) { break; }
+        if ((PlayerType(autoCFBF69D6_var) != c_playerTypeComputer)) {
+            continue;
+        }
+
+        libVSAI_gf_RunViscerousAI(autoCFBF69D6_var);
+        auto6760E9AA_val = PlayerRace(autoCFBF69D6_var);
+        if (auto6760E9AA_val == "Terr") {
+            TriggerExecute(libAREX_gt_TerranAIController, true, false);
+        }
+        else if (auto6760E9AA_val == "UED") {
+            TriggerExecute(libAREX_gt_UEDAIController, true, false);
+        }
+        else if (auto6760E9AA_val == "Dragon") {
+            TriggerExecute(libAREX_gt_DragonAIController, true, false);
+        }
+        else {
+        }
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libAREX_gt_CustomAITriggers_Init () {
+    libAREX_gt_CustomAITriggers = TriggerCreate("libAREX_gt_CustomAITriggers_Func");
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: UED AI Controller
+//--------------------------------------------------------------------------------------------------
+bool libAREX_gt_UEDAIController_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unitgroup lv_headquarters;
+    unitgroup lv_beacons;
+    int lv_aIPlayer;
+
+    // Automatic Variable Declarations
+    unitgroup auto03EFBCD9_g;
+    int auto03EFBCD9_u;
+    unit auto03EFBCD9_var;
+
+    // Variable Initialization
+    lv_headquarters = UnitGroupEmpty();
+    lv_beacons = UnitGroupEmpty();
+    lv_aIPlayer = libVSAI_gv_pickedai;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    while ((UnitGroupCount(UnitGroup(null, lv_aIPlayer, RegionEntireMap(), UnitFilter((1 << c_targetFilterPreventDefeat), 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 1), c_unitCountAlive) > 0)) {
+        Wait(8.0, c_timeAI);
+        lv_headquarters = UnitGroup("OperationHeadquarters", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        auto03EFBCD9_g = lv_headquarters;
+        auto03EFBCD9_u = UnitGroupCount(auto03EFBCD9_g, c_unitCountAll);
+        for (;; auto03EFBCD9_u -= 1) {
+            auto03EFBCD9_var = UnitGroupUnitFromEnd(auto03EFBCD9_g, auto03EFBCD9_u);
+            if (auto03EFBCD9_var == null) { break; }
+            lv_beacons = UnitGroup("BeaconUED", lv_aIPlayer, RegionCircle(UnitGetPosition(auto03EFBCD9_var), 20.0), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 1);
+            if ((UnitGroupCount(UnitGroup("BeaconUED", lv_aIPlayer, RegionCircle(UnitGetPosition(auto03EFBCD9_var), 20.0), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 1), c_unitCountAlive) == 0)) {
+                UnitIssueOrder(auto03EFBCD9_var, OrderTargetingPoint(AbilityCommand("WarpUEDBeacon", 0), libARRA_gf_Thenearestbuildablepointtothepoint(UnitGetPosition(auto03EFBCD9_var), 0)), c_orderQueueAddToFront);
+            }
+
+        }
+        AISetGroupScriptControlled(lv_headquarters, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libAREX_gt_UEDAIController_Init () {
+    libAREX_gt_UEDAIController = TriggerCreate("libAREX_gt_UEDAIController_Func");
+    TriggerEnable(libAREX_gt_UEDAIController, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Dragon AI Controller
+//--------------------------------------------------------------------------------------------------
+bool libAREX_gt_DragonAIController_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unitgroup lv_headquarters;
+    unitgroup lv_beacons;
+    int lv_aIPlayer;
+
+    // Automatic Variable Declarations
+    int auto817F51A0_player;
+    int auto817F51A0_state;
+    int auto817F51A0_var;
+    int auto817F51A0_statevar;
+
+    // Variable Initialization
+    lv_headquarters = UnitGroupEmpty();
+    lv_beacons = UnitGroupEmpty();
+    lv_aIPlayer = libVSAI_gv_pickedai;
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    auto817F51A0_player = 1;
+    auto817F51A0_state = 3;
+    auto817F51A0_var = 0;
+    for ( ; auto817F51A0_var < c_townMax; auto817F51A0_var += 1 ) {
+        auto817F51A0_statevar = AIGetTownState(auto817F51A0_player,auto817F51A0_var);
+        if (auto817F51A0_statevar == auto817F51A0_state) {
+            libVSAI_gf_BuildIfNotInQueue(lv_aIPlayer, "FrontierDeepOne", libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, 1, null, libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, auto817F51A0_var, libVSAI_gv_standard, 1);
+        }
+    }
+    AISetStock(lv_aIPlayer, 1, "LesserDeepOne");
+    libVSAI_gf_BuildIfNotInQueue(lv_aIPlayer, "DragonHunter", libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, 5, null, libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, -1, libVSAI_gv_standard, 1);
+    libVSAI_gf_BuildIfNotInQueue(lv_aIPlayer, "Flamespitter", libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, 5, null, libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, -1, libVSAI_gv_standard, 1);
+    AISetStock(lv_aIPlayer, 1, "GreaterDeepOne");
+    libVSAI_gf_BuildIfNotInQueue(lv_aIPlayer, "Berserker", libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, 5, null, libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, -1, libVSAI_gv_standard, 1);
+    AISetStock(lv_aIPlayer, 1, "ToweringDeepOne");
+    libVSAI_gf_BuildIfNotInQueue(lv_aIPlayer, "Fleshrender", libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, 5, null, libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, -1, libVSAI_gv_standard, 1);
+    libVSAI_gf_BuildIfNotInQueue(lv_aIPlayer, "AuroraConduit", libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, 5, null, libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, -1, libVSAI_gv_standard, 1);
+    libVSAI_gf_BuildIfNotInQueue(lv_aIPlayer, "GrimGlider", libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, 5, null, libVSAI_ge_TgAIIncludeAlias_DontIncludeAlias, -1, libVSAI_gv_standard, 1);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libAREX_gt_DragonAIController_Init () {
+    libAREX_gt_DragonAIController = TriggerCreate("libAREX_gt_DragonAIController_Func");
+    TriggerEnable(libAREX_gt_DragonAIController, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Terran AI Controller
+//--------------------------------------------------------------------------------------------------
+bool libAREX_gt_TerranAIController_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_aIPlayer;
+    unitgroup lv_barracks;
+    unitgroup lv_factories;
+    unitgroup lv_starports;
+
+    // Automatic Variable Declarations
+    unitgroup auto1A822E8C_g;
+    int auto1A822E8C_u;
+    unit auto1A822E8C_var;
+    unitgroup autoA8F37DFD_g;
+    int autoA8F37DFD_u;
+    unit autoA8F37DFD_var;
+    unitgroup auto95E60579_g;
+    int auto95E60579_u;
+    unit auto95E60579_var;
+
+    // Variable Initialization
+    lv_aIPlayer = libVSAI_gv_pickedai;
+    lv_barracks = UnitGroupEmpty();
+    lv_factories = UnitGroupEmpty();
+    lv_starports = UnitGroupEmpty();
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    while ((UnitGroupCount(UnitGroup(null, lv_aIPlayer, RegionEntireMap(), UnitFilter((1 << c_targetFilterPreventDefeat), 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 1), c_unitCountAlive) > 0)) {
+        Wait(8.0, c_timeAI);
+        lv_barracks = UnitGroup("Barracks", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        UnitGroupAddUnitGroup(lv_barracks, UnitGroup("BarracksFlying", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+        lv_factories = UnitGroup("Factory", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        UnitGroupAddUnitGroup(lv_factories, UnitGroup("FactoryFlying", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+        lv_starports = UnitGroup("Starport", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        UnitGroupAddUnitGroup(lv_starports, UnitGroup("StarportFlying", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0));
+        auto1A822E8C_g = lv_barracks;
+        auto1A822E8C_u = UnitGroupCount(auto1A822E8C_g, c_unitCountAll);
+        for (;; auto1A822E8C_u -= 1) {
+            auto1A822E8C_var = UnitGroupUnitFromEnd(auto1A822E8C_g, auto1A822E8C_u);
+            if (auto1A822E8C_var == null) { break; }
+            UnitIssueOrder(auto1A822E8C_var, OrderTargetingPoint(AbilityCommand("BarracksAddOns", 0), libARRA_gf_Thenearestbuildablepointtothepoint(UnitGetPosition(auto1A822E8C_var), 0)), c_orderQueueAddToEnd);
+        }
+        autoA8F37DFD_g = lv_factories;
+        autoA8F37DFD_u = UnitGroupCount(autoA8F37DFD_g, c_unitCountAll);
+        for (;; autoA8F37DFD_u -= 1) {
+            autoA8F37DFD_var = UnitGroupUnitFromEnd(autoA8F37DFD_g, autoA8F37DFD_u);
+            if (autoA8F37DFD_var == null) { break; }
+            UnitIssueOrder(autoA8F37DFD_var, OrderTargetingPoint(AbilityCommand("FactoryAddOns", 0), libARRA_gf_Thenearestbuildablepointtothepoint(UnitGetPosition(autoA8F37DFD_var), 0)), c_orderQueueAddToEnd);
+        }
+        auto95E60579_g = lv_starports;
+        auto95E60579_u = UnitGroupCount(auto95E60579_g, c_unitCountAll);
+        for (;; auto95E60579_u -= 1) {
+            auto95E60579_var = UnitGroupUnitFromEnd(auto95E60579_g, auto95E60579_u);
+            if (auto95E60579_var == null) { break; }
+            UnitIssueOrder(auto95E60579_var, OrderTargetingPoint(AbilityCommand("StarportAddOns", 0), libARRA_gf_Thenearestbuildablepointtothepoint(UnitGetPosition(auto95E60579_var), 0)), c_orderQueueAddToEnd);
+        }
+        AISetGroupScriptControlled(lv_barracks, false);
+        AISetGroupScriptControlled(lv_factories, false);
+        AISetGroupScriptControlled(lv_starports, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libAREX_gt_TerranAIController_Init () {
+    libAREX_gt_TerranAIController = TriggerCreate("libAREX_gt_TerranAIController_Func");
+    TriggerEnable(libAREX_gt_TerranAIController, false);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Deprecated Genetron V2 AI Controller
+//--------------------------------------------------------------------------------------------------
+bool libAREX_gt_DeprecatedGenetronV2AIController_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    unitgroup lv_manufacturers;
+    unitgroup lv_assemblyArrays;
+    unitgroup lv_fabricators;
+    unitgroup lv_beacons;
+    int lv_aIPlayer;
+    unitgroup lv_units;
+
+    // Automatic Variable Declarations
+    unitgroup auto1C9CC46D_g;
+    int auto1C9CC46D_u;
+    unit auto1C9CC46D_var;
+    int auto06199AA4_val;
+
+    // Variable Initialization
+    lv_manufacturers = UnitGroupEmpty();
+    lv_assemblyArrays = UnitGroupEmpty();
+    lv_fabricators = UnitGroupEmpty();
+    lv_beacons = UnitGroupEmpty();
+    lv_aIPlayer = libVSAI_gv_pickedai;
+    lv_units = UnitGroupEmpty();
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    while ((UnitGroupCount(UnitGroup(null, lv_aIPlayer, RegionEntireMap(), UnitFilter((1 << c_targetFilterPreventDefeat), 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 1), c_unitCountAlive) > 0)) {
+        Wait(8.0, c_timeAI);
+        lv_units = UnitGroupEmpty();
+        lv_manufacturers = UnitGroup("Manufacturer", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        lv_assemblyArrays = UnitGroup("AssemblyArray", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        lv_fabricators = UnitGroup("Fabricator", lv_aIPlayer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0);
+        UnitGroupAddUnitGroup(lv_units, lv_manufacturers);
+        UnitGroupAddUnitGroup(lv_units, lv_assemblyArrays);
+        UnitGroupAddUnitGroup(lv_units, lv_assemblyArrays);
+        auto1C9CC46D_g = lv_units;
+        auto1C9CC46D_u = UnitGroupCount(auto1C9CC46D_g, c_unitCountAll);
+        for (;; auto1C9CC46D_u -= 1) {
+            auto1C9CC46D_var = UnitGroupUnitFromEnd(auto1C9CC46D_g, auto1C9CC46D_u);
+            if (auto1C9CC46D_var == null) { break; }
+            auto06199AA4_val = RandomInt(1, 3);
+            if (auto06199AA4_val == 1) {
+                UnitIssueOrder(auto1C9CC46D_var, Order(AbilityCommand("GenetronProductionModeOverclock", 0)), c_orderQueueAddToFront);
+            }
+            else if (auto06199AA4_val == 2) {
+                UnitIssueOrder(auto1C9CC46D_var, Order(AbilityCommand("GenetronProductionModePerformance", 0)), c_orderQueueAddToFront);
+            }
+            else if (auto06199AA4_val == 3) {
+                UnitIssueOrder(auto1C9CC46D_var, Order(AbilityCommand("GenetronProductionModeStandard", 0)), c_orderQueueAddToFront);
+            }
+            else {
+            }
+        }
+        AISetGroupScriptControlled(lv_units, false);
+    }
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libAREX_gt_DeprecatedGenetronV2AIController_Init () {
+    libAREX_gt_DeprecatedGenetronV2AIController = TriggerCreate("libAREX_gt_DeprecatedGenetronV2AIController_Func");
+    TriggerEnable(libAREX_gt_DeprecatedGenetronV2AIController, false);
+}
+
+void libAREX_InitTriggers () {
+    libAREX_gt_GameAttributes_Init();
+    libAREX_gt_CustomAITriggers_Init();
+    libAREX_gt_UEDAIController_Init();
+    libAREX_gt_DragonAIController_Init();
+    libAREX_gt_TerranAIController_Init();
+    libAREX_gt_DeprecatedGenetronV2AIController_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool libAREX_InitLib_completed = false;
+
+void libAREX_InitLib () {
+    if (libAREX_InitLib_completed) {
+        return;
+    }
+
+    libAREX_InitLib_completed = true;
+
+    libAREX_InitLibraries();
+    libAREX_InitTriggers();
+}
+

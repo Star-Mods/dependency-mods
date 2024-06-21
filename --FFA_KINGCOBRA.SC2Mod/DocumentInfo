@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Flags>
+        <Value>ExtensionMod</Value>
+    </Flags>
+    <Dependencies>
+        <Value>bnet:Void Multi (Mod)/0.0/999,file:Mods/VoidMulti.SC2Mod</Value>
+    </Dependencies>
+    <PatchNote>
+        <Version>
+            <Value>0.28</Value>
+            <Value>1.2</Value>
+        </Version>
+        <Date>
+            <Value>1/6/2018</Value>
+            <Value>6/11/2018</Value>
+        </Date>
+        <Notes>
+            <Value>1,2,3,4,5,6</Value>
+            <Value>7,8,9,10,11,12,13,14</Value>
+        </Notes>
+    </PatchNote>
+</DocInfo>

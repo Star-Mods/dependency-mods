@@ -1,0 +1,12 @@
+﻿Abil/EditorPrefix/ChronoBoostEnergyCost=Nexus -
+Abil/EditorPrefix/OracleStasisTrapActivate=Stasis Ward -
+Abil/EditorPrefix/OracleWeapon=Oracle -
+Actor/Name/WarpPrismPhasing2=Warp Prism Phasing Копия
+Actor/Name/WarpPrismPhasing22=Warp Prism Phasing Копия Копия
+Actor/Name/koth_radar_hill=KOTH radar hill
+Actor/Name/koth_radar_hill2=KOTH radar death zone
+Behavior/EditorPrefix/KothHillDeathZoneRadius=Царь горы -
+Behavior/EditorPrefix/KothHillRadius=Царь горы -
+Validator/EditorPrefix/death_zone_damage=death zone -
+Validator/Name/death_zone_protected=death_zone_protected
+Validator/Name/death_zone_protected_permanent=death_zone_protected_permanent

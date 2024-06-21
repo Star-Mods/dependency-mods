@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUser id="GameSettings">
+        <Fields>
+            <Id value="HarvestableResource"/>
+            <Type value="User"/>
+            <UserType value="GameSettings_HarvestableResourceTypes"/>
+            <EditorColumn value="1"/>
+            <Flags index="Modifiable" value="1"/>
+        </Fields>
+        <Fields>
+            <Id value="InitialResources"/>
+            <Type value="User"/>
+            <UserType value="GameSettings_InitialResources"/>
+            <EditorColumn value="3"/>
+            <Flags index="Modifiable" value="1"/>
+        </Fields>
+        <Fields>
+            <Id value="SupplyCap"/>
+            <Type value="User"/>
+            <UserType value="GameSettings_SupplyCap"/>
+            <EditorColumn value="4"/>
+            <Flags index="Modifiable" value="1"/>
+        </Fields>
+        <Fields>
+            <Id value="AvailableFactions"/>
+            <Type value="User"/>
+            <UserType value="GameSettings_AvailableFactions"/>
+            <Count value="15"/>
+            <EditorColumn value="6"/>
+            <Flags index="Modifiable" value="1"/>
+        </Fields>
+        <Instances Id="[Default]"/>
+        <Instances Id="CurrentGame">
+            <User Type="GameSettings_HarvestableResourceTypes" Instance="Ladder">
+                <Field Id="HarvestableResource"/>
+            </User>
+            <User Type="GameSettings_InitialResources" Instance="Ladder">
+                <Field Id="InitialResources"/>
+            </User>
+            <User Type="GameSettings_SupplyCap" Instance="Ladder">
+                <Field Id="SupplyCap"/>
+            </User>
+        </Instances>
+    </CUser>
+    <CUser id="GameSettings_AvailableFactions">
+        <Fields>
+            <Id value="Race"/>
+            <Type value="GameLink"/>
+            <GameLinkType value="Race"/>
+            <Count value="50"/>
+            <EditorColumn value="1"/>
+        </Fields>
+        <Instances Id="[Default]">
+            <GameLink GameLink="_None_">
+                <Field Id="Race"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="1"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="2"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="3"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="4"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="5"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="6"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="7"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="8"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="9"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="10"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="11"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="12"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="13"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="14"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="15"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="16"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="17"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="18"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="19"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="20"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="21"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="22"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="23"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="24"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="25"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="26"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="27"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="28"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="29"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="30"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="31"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="32"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="33"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="34"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="35"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="36"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="37"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="38"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="39"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="40"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="41"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="42"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="43"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="44"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="45"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="46"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="47"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="48"/>
+            </GameLink>
+            <GameLink GameLink="_None_">
+                <Field Id="Race" Index="49"/>
+            </GameLink>
+        </Instances>
+    </CUser>
+    <CUser id="GameSettings_HarvestableResourceTypes">
+        <Fields Id="Minerals Rich" Type="Int" EditorColumn="1"/>
+        <Fields Id="Vespene Rich" Type="Int" EditorColumn="2"/>
+        <Fields Id="Minerals BGH" Type="Int" EditorColumn="3"/>
+        <Fields Id="Vespene BGH" Type="Int" EditorColumn="4"/>
+        <Instances Id="[Default]"/>
+        <Instances Id="Ladder"/>
+        <Instances Id="Rich">
+            <Int Int="1">
+                <Field Id="Minerals Rich"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="Vespene Rich"/>
+            </Int>
+        </Instances>
+        <Instances Id="BGH">
+            <Int Int="1">
+                <Field Id="Minerals BGH"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="Vespene BGH"/>
+            </Int>
+        </Instances>
+        <Instances Id="BGH Rich">
+            <Int Int="1">
+                <Field Id="Minerals BGH"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="Minerals Rich"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="Vespene BGH"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="Vespene Rich"/>
+            </Int>
+        </Instances>
+    </CUser>
+    <CUser id="GameSettings_InitialResources">
+        <Fields Id="minerals" Type="Int" EditorColumn="1"/>
+        <Fields Id="vespene" Type="Int" EditorColumn="2"/>
+        <Instances Id="[Default]"/>
+        <Instances Id="Ladder">
+            <Int Int="50">
+                <Field Id="minerals"/>
+            </Int>
+        </Instances>
+        <Instances Id="Rich">
+            <Int Int="5000">
+                <Field Id="minerals"/>
+            </Int>
+            <Int Int="2500">
+                <Field Id="vespene"/>
+            </Int>
+        </Instances>
+        <Instances Id="Jeff Bezos">
+            <Int Int="150000000">
+                <Field Id="minerals"/>
+            </Int>
+            <Int Int="150000000">
+                <Field Id="vespene"/>
+            </Int>
+        </Instances>
+    </CUser>
+    <CUser id="GameSettings_SupplyCap">
+        <Fields Id="Supply" Type="Int" EditorColumn="1"/>
+        <Instances Id="[Default]"/>
+        <Instances Id="100">
+            <Int Int="100">
+                <Field Id="Supply"/>
+            </Int>
+        </Instances>
+        <Instances Id="Ladder">
+            <Int Int="200">
+                <Field Id="Supply"/>
+            </Int>
+        </Instances>
+        <Instances Id="300">
+            <Int Int="300">
+                <Field Id="Supply"/>
+            </Int>
+        </Instances>
+        <Instances Id="400">
+            <Int Int="400">
+                <Field Id="Supply"/>
+            </Int>
+        </Instances>
+        <Instances Id="500">
+            <Int Int="500">
+                <Field Id="Supply"/>
+            </Int>
+        </Instances>
+        <Instances Id="1000">
+            <Int Int="1000">
+                <Field Id="Supply"/>
+            </Int>
+        </Instances>
+    </CUser>
+    <CUser id="MonobattlesProfiles">
+        <Fields>
+            <Id value="Unit"/>
+            <Type value="Unit"/>
+            <Count value="3"/>
+            <EditorColumn value="1"/>
+        </Fields>
+        <Fields>
+            <Id value="Race"/>
+            <Type value="GameLink"/>
+            <GameLinkType value="Race"/>
+            <EditorColumn value="3"/>
+        </Fields>
+        <Fields>
+            <Id value="UnitExcludes"/>
+            <Type value="Unit"/>
+            <Count value="5"/>
+            <EditorColumn value="4"/>
+        </Fields>
+        <Fields>
+            <Id value="UpgradesExcludes"/>
+            <Type value="Upgrade"/>
+            <Count value="2"/>
+            <EditorColumn value="4"/>
+        </Fields>
+        <Fields Id="Active" Type="Int" EditorColumn="9"/>
+        <Fields Id="Tier" Type="Int" EditorColumn="4"/>
+        <Fields>
+            <Id value="Upgrades"/>
+            <Type value="Upgrade"/>
+            <Count value="3"/>
+            <EditorColumn value="6"/>
+        </Fields>
+        <Instances Id="[Default]">
+            <Int Int="1">
+                <Field Id="Active"/>
+            </Int>
+            <Int Int="2">
+                <Field Id="Tier"/>
+            </Int>
+        </Instances>
+    </CUser>
+    <CUser id="PlayersSettings">
+        <Fields>
+            <Id value="Race"/>
+            <Type value="GameLink"/>
+            <GameLinkType value="Race"/>
+            <EditorColumn value="1"/>
+            <Flags index="Modifiable" value="1"/>
+        </Fields>
+        <Instances Id="[Default]">
+            <GameLink GameLink="_Random_">
+                <Field Id="Race"/>
+            </GameLink>
+        </Instances>
+        <Instances Id="0"/>
+        <Instances Id="1"/>
+        <Instances Id="2"/>
+        <Instances Id="3"/>
+        <Instances Id="4"/>
+        <Instances Id="5"/>
+        <Instances Id="6"/>
+        <Instances Id="7"/>
+        <Instances Id="8"/>
+        <Instances Id="9"/>
+        <Instances Id="10"/>
+        <Instances Id="11"/>
+        <Instances Id="12"/>
+        <Instances Id="13"/>
+        <Instances Id="14"/>
+        <Instances Id="15"/>
+    </CUser>
+    <CUser id="ResourcesData">
+        <Fields Id="Unit" Type="Unit" EditorColumn="2"/>
+        <Fields Id="WorkersRallyIndex" Type="Int" EditorColumn="3"/>
+        <Fields Id="RichUnit" Type="Unit" EditorColumn="2"/>
+        <Instances Id="[Default]"/>
+        <Instances Id="VespeneGeyser">
+            <Unit Unit="VespeneGeyser">
+                <Field Id="Unit"/>
+            </Unit>
+            <Unit Unit="RichVespeneGeyser">
+                <Field Id="RichUnit"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Mineral Field">
+            <Unit Unit="MineralField">
+                <Field Id="Unit"/>
+            </Unit>
+            <Unit Unit="RichMineralField">
+                <Field Id="RichUnit"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Mineral Field 900">
+            <Unit Unit="MineralField750">
+                <Field Id="Unit"/>
+            </Unit>
+            <Unit Unit="RichMineralField750">
+                <Field Id="RichUnit"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Purifier Mineral Field">
+            <Unit Unit="PurifierMineralField">
+                <Field Id="Unit"/>
+            </Unit>
+            <Unit Unit="PurifierRichMineralField">
+                <Field Id="RichUnit"/>
+            </Unit>
+        </Instances>
+        <Instances Id="Purifier Mineral Field 900">
+            <Unit Unit="PurifierMineralField750">
+                <Field Id="Unit"/>
+            </Unit>
+            <Unit Unit="PurifierRichMineralField750">
+                <Field Id="RichUnit"/>
+            </Unit>
+        </Instances>
+    </CUser>
+    <CUser id="RaceData">
+        <Fields>
+            <Id value="Race"/>
+            <Type value="GameLink"/>
+            <GameLinkType value="Race"/>
+            <EditorColumn value="1"/>
+        </Fields>
+        <Fields Id="MB_AllowAllTransports" Type="Int"/>
+        <Fields Id="MB_AllowAllSupplyStructures" Type="Int"/>
+        <Fields Id="MB_AllowAllDetectors" Type="Int"/>
+        <Fields Id="MB_DefaultProfile" Type="User" UserType="Monobattle_Profiles"/>
+        <Fields Id="MB_AllowedUnits" Type="Unit" Count="7"/>
+        <Fields Id="MB_AllowedUpgrades" Type="Upgrade" Count="3"/>
+        <Fields Id="MB_UnitDetector" Type="Unit"/>
+        <Fields Id="InitializeTrigger" Type="String" EditorColumn="4"/>
+        <Instances Id="[Default]">
+            <Int Int="1">
+                <Field Id="MB_AllowAllSupplyStructures"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="MB_AllowAllDetectors"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="MB_AllowAllTransports"/>
+            </Int>
+        </Instances>
+    </CUser>
+    <CUser id="Rules">
+        <Fields>
+            <Id value="Race"/>
+            <Type value="GameLink"/>
+            <GameLinkType value="Race"/>
+            <EditorColumn value="1"/>
+        </Fields>
+        <Fields Id="Transport" Type="Int" EditorColumn="3"/>
+        <Fields Id="Supply" Type="Int" EditorColumn="3"/>
+        <Fields Id="Detector" Type="Int" EditorColumn="3"/>
+        <Fields Id="Worker" Type="Unit" EditorColumn="2"/>
+        <Fields Id="TownHall" Type="Unit" EditorColumn="2"/>
+        <Fields Id="Extra" Type="Unit" EditorColumn="3"/>
+        <Fields Id="Creep" Type="Int" EditorColumn="14"/>
+        <Fields>
+            <Id value="Default Profile"/>
+            <Type value="User"/>
+            <UserType value="MonobattlesProfiles"/>
+            <EditorColumn value="6"/>
+        </Fields>
+        <Fields Id="Category" Type="String" EditorColumn="2"/>
+        <Fields>
+            <Id value="Unit"/>
+            <Type value="Unit"/>
+            <Count value="7"/>
+            <EditorColumn value="9"/>
+        </Fields>
+        <Fields Id="Upgrade" Type="Upgrade" Count="3"/>
+        <Fields Id="UnitDetector" Type="Unit"/>
+        <Fields Id="Group" Type="String" EditorColumn="1"/>
+        <Instances Id="[Default]">
+            <Int Int="1">
+                <Field Id="Supply"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="Detector"/>
+            </Int>
+            <Int Int="1">
+                <Field Id="Transport"/>
+            </Int>
+        </Instances>
+    </CUser>
+    <CUser id="UnitData">
+        <Fields Id="Unit" Type="Unit" EditorColumn="2"/>
+        <Fields Id="WorkersRallyIndex" Type="Int" EditorColumn="3"/>
+        <Instances Id="[Default]"/>
+    </CUser>
+</Catalog>

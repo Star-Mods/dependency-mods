@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CEffectDamage id="death_zone_damage">
+        <ValidatorArray value="death_zone_damageTargetFilters"/>
+        <EditorCategories value=""/>
+        <Amount value="0.5"/>
+        <Visibility value="Hidden"/>
+    </CEffectDamage>
+    <CEffectDamage id="blood_lust_damage">
+        <ValidatorArray value="death_zone_damageTargetFilters"/>
+        <EditorCategories value=""/>
+        <Visibility value="Hidden"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+</Catalog>

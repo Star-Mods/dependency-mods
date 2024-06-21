@@ -1,0 +1,63 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: GAMEMODE - KING OF THE HILL
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+int libC6A42A55_gv_hillRadius;
+region libC6A42A55_gv_hillRegion;
+unitfilter libC6A42A55_gv_kOTHFilter;
+timer libC6A42A55_gv_preparation_timer;
+int libC6A42A55_gv_preparation_timer_window;
+bool libC6A42A55_gv_preparation_active;
+int libC6A42A55_gv_current_controller;
+int libC6A42A55_gv_prev_controller;
+timer libC6A42A55_gv_koth_timer;
+int libC6A42A55_gv_koth_timer_window;
+int libC6A42A55_gv_time_for_win;
+bool libC6A42A55_gv_contested;
+region libC6A42A55_gv_death_zone;
+int libC6A42A55_gv_death_zone_radius;
+bool libC6A42A55_gv_death_zone_active;
+timer libC6A42A55_gv_blood_lust_preparation_timer;
+int libC6A42A55_gv_blood_lust_preparation_timer_window;
+bool libC6A42A55_gv_blood_lust_enabled;
+bool libC6A42A55_gv_blood_lust_active;
+timer[17] libC6A42A55_gv_blood_lust_timers;
+int[17] libC6A42A55_gv_blood_lust_timer_windows;
+int libC6A42A55_gv_blood_lust_leaderboard;
+
+// Function Declarations
+void libC6A42A55_gf_KOTH (bool lp_kOTHRevealed, bool lp_kOTHOnlyVisible, bool lp_kOTHOnlyGround, int lp_preparationTime, int lp_timeForWin, int lp_deathZoneRadius);
+bool libC6A42A55_gf_acceptable_unit_for_koth (unit lp_unit);
+int libC6A42A55_gf_get_buff_count (unit lp_unit);
+bool libC6A42A55_gf_acceptable_unit_for_death_zone (unit lp_unit);
+void libC6A42A55_gf_update_queen_protection (int lp_player);
+void libC6A42A55_gf_blood_lust_init (int lp_preparationTimeSec, bool lp_showTimer);
+bool libC6A42A55_gf_acceptable_unit_for_blood_lust_damage (unit lp_unit);
+bool libC6A42A55_gf_acceptable_unit_for_bloodlust (unit lp_unit);
+
+// Trigger Declarations
+trigger libC6A42A55_gt_preparation_end;
+trigger libC6A42A55_gt_cycle;
+trigger libC6A42A55_gt_create_koth_timer_window;
+trigger libC6A42A55_gt_koth_winner;
+trigger libC6A42A55_gt_player_defeated;
+trigger libC6A42A55_gt_add_buffs_to_new_units2;
+trigger libC6A42A55_gt_add_buffs_to_new_units;
+trigger libC6A42A55_gt_queen_created;
+trigger libC6A42A55_gt_queen_died;
+trigger libC6A42A55_gt_hatch_created;
+trigger libC6A42A55_gt_hatch_died;
+trigger libC6A42A55_gt_enter_death_zone;
+trigger libC6A42A55_gt_leave_death_zone;
+trigger libC6A42A55_gt_blood_lust_preparation_end;
+trigger libC6A42A55_gt_blood_lust_leaderboard_cycle;
+trigger libC6A42A55_gt_blood_lust_timer_end;
+trigger libC6A42A55_gt_blood_lust_unit_die;
+trigger libC6A42A55_gt_blood_lust_unit_created;
+trigger libC6A42A55_gt_playerdefeated;
+
+// Library Initialization
+void libC6A42A55_InitVariables ();
+

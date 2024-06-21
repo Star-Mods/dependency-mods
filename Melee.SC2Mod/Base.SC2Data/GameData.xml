@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Includes>
+    <Catalog path="ExtraData/BigGameHunters.xml"/>
+    <Catalog path="ExtraData/CleanUp.xml"/>
+    <Catalog path="ExtraData/Monobattle.xml"/>
+    <Catalog path="ExtraData/Zombies.xml"/>
+    <Catalog path="ExtraData/PeepMode.xml"/>
+    <Catalog path="ExtraData/KOTH.xml"/>
+</Includes>

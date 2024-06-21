@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CRace id="_None_"/>
+    <CRace id="_Default_"/>
+    <CRace id="_Random_">
+        <RaceIcon value="@UI/RaceIcon/Default"/>
+        <GameMusic value="Music_DefaultLow"/>
+    </CRace>
+</Catalog>

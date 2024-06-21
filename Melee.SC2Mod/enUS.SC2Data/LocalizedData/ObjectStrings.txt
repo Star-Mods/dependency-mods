@@ -1,0 +1,46 @@
+﻿Actor/Name/InfestedCaster=InfestedCaster
+Actor/Name/KothActor=KothActor
+Actor/Name/koth_radar_hill=KOTH radar hill
+Actor/Name/koth_radar_hill2=KOTH radar death zone
+Behavior/EditorPrefix/KothHillDeathZoneRadius=Царь горы -
+Behavior/EditorPrefix/KothHillRadius=Царь горы -
+Behavior/Name/disable_hp_regen=disable_hp_regen
+Race/EditorSuffix/WADragon=(Workers Alliance)
+Race/EditorSuffix/WAGen=(Workers Alliance)
+Race/EditorSuffix/WAKeir=(Workers Alliance)
+Race/EditorSuffix/WANHbr=(Workers Alliance)
+Race/EditorSuffix/WAProt=(Workers Alliance)
+Race/EditorSuffix/WASynd=(Workers Alliance)
+Race/EditorSuffix/WATerU=(Workers Alliance)
+Race/EditorSuffix/WATerr=(Workers Alliance)
+Race/EditorSuffix/WAUED=(Workers Alliance)
+Race/EditorSuffix/WAUPL= (Workers Alliance)
+Race/EditorSuffix/WAXayi=(Workers Alliance)
+Race/EditorSuffix/WAZerg=(Workers Alliance)
+Requirement/Name/CanMutateToGreaterSpire=CanMutateToGreaterSpire
+RequirementNode/Name/AllowUnitGreaterSpire=AllowUnit(GreaterSpire)
+RequirementNode/Name/AllowUnitStargate=AllowUnit(Stargate)
+RequirementNode/Name/AndCountUnitGreaterSpireCompleteOnlyTechTreeCheatAllowUnitGreaterSpire=CountUnit(GreaterSpire,CompleteOnly)[TechTreeCheat] && AllowUnit(GreaterSpire)
+RequirementNode/Name/AndCountUnitHiveCompleteOnlyTechTreeCheatAllowUnitGreaterSpire=CountUnit(Hive,CompleteOnly)[TechTreeCheat] && AllowUnit(GreaterSpire)
+RequirementNode/Name/AndEqCountUpgradeProtossAirArmorsLevel1QueuedOrBetter0AllowUnitStargate=CountUpgrade(ProtossAirArmorsLevel1,QueuedOrBetter) == 0 && AllowUnit(Stargate)
+RequirementNode/Name/AndEqCountUpgradeProtossAirArmorsLevel2QueuedOrBetter0AllowUnitStargate=CountUpgrade(ProtossAirArmorsLevel2,QueuedOrBetter) == 0 && AllowUnit(Stargate)
+RequirementNode/Name/AndEqCountUpgradeProtossAirArmorsLevel3QueuedOrBetter0AllowUnitStargate=CountUpgrade(ProtossAirArmorsLevel3,QueuedOrBetter) == 0 && AllowUnit(Stargate)
+RequirementNode/Name/AndEqCountUpgradeProtossAirWeaponsLevel1QueuedOrBetter0AllowUnitStargate=CountUpgrade(ProtossAirWeaponsLevel1,QueuedOrBetter) == 0 && AllowUnit(Stargate)
+RequirementNode/Name/AndEqCountUpgradeProtossAirWeaponsLevel2QueuedOrBetter0AllowUnitStargate=CountUpgrade(ProtossAirWeaponsLevel2,QueuedOrBetter) == 0 && AllowUnit(Stargate)
+RequirementNode/Name/AndEqCountUpgradeProtossAirWeaponsLevel3QueuedOrBetter0AllowUnitStargate=CountUpgrade(ProtossAirWeaponsLevel3,QueuedOrBetter) == 0 && AllowUnit(Stargate)
+User/Name/GameSettings=Game Settings
+User/Name/GameSettings_AvailableFactions=Available Factions
+User/Name/GameSettings_HarvestableResourceTypes=Harvestable Resource Types
+User/Name/GameSettings_InitialResources=Initial Resources
+User/Name/GameSettings_SupplyCap=Supply Cap
+User/Name/MonobattlesProfiles=Monobattle Profiles
+User/Name/PlayersSettings=Players Settings
+User/Name/RaceData=Race Data
+User/Name/ResourcesData=Resources Data
+User/Name/RichUnitTypes=RichUnitTypes
+User/Name/Rules=Rules
+User/Name/UnitData=Unit Data
+Validator/EditorPrefix/death_zone_damage=death zone -
+Validator/Name/death_zone_protected=death_zone_protected
+Validator/Name/death_zone_protected_permanent=death_zone_protected_permanent
+Validator/Name/death_zone_protected_queen=death_zone_protected_queen

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preload>
+<Asset path="assets\textures\icon-gas-protoss-nobg.dds" Type="Image"/>
+<Asset path="assets\textures\icon-mineral-nobg.dds" Type="Image"/>
+<Actor id="SYSTEM_ActorConfig"/>
+<Behavior id="KothHillDeathZoneRadius"/>
+<Behavior id="death_zone_damage"/>
+<Behavior id="blood_lust_damage"/>
+<Behavior id="death_zone_protect"/>
+<Behavior id="death_zone_protection_permanent"/>
+<Behavior id="death_zone_protection_permanent_queen"/>
+<Behavior id="disable_hp_regen"/>
+<Sound id="zVO_ProtossOracle_ProtossFlyingCaster_010" Variations="0"/>
+<Unit id="koth_hill"/>
+</Preload>

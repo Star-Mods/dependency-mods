@@ -1,0 +1,56 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: KING OF THE HILL
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+int lib66284E8B_gv_observer;
+playergroup lib66284E8B_gv_observerGroup;
+text lib66284E8B_gv_koth_help;
+text lib66284E8B_gv_death_zone_help;
+int lib66284E8B_gv_hill_radius;
+region lib66284E8B_gv_hill;
+unitfilter lib66284E8B_gv_koth_filter;
+timer lib66284E8B_gv_preparation_timer;
+int lib66284E8B_gv_preparation_timer_window;
+bool lib66284E8B_gv_preparation_active;
+int lib66284E8B_gv_current_controller;
+int lib66284E8B_gv_prev_controller;
+timer lib66284E8B_gv_koth_timer;
+int lib66284E8B_gv_koth_timer_window;
+int lib66284E8B_gv_time_for_win;
+bool lib66284E8B_gv_contested;
+region lib66284E8B_gv_death_zone;
+int lib66284E8B_gv_death_zone_radius;
+bool lib66284E8B_gv_death_zone_active;
+
+// Function Declarations
+bool lib66284E8B_gf_acceptable_unit_for_koth (unit lp_unit);
+int lib66284E8B_gf_get_buff_count (unit lp_unit);
+bool lib66284E8B_gf_acceptable_unit_for_death_zone (unit lp_unit);
+void lib66284E8B_gf_update_queen_protection (int lp_player);
+
+// Trigger Declarations
+trigger lib66284E8B_gt_setobserver;
+trigger lib66284E8B_gt_create_hill;
+trigger lib66284E8B_gt_fill_filter;
+trigger lib66284E8B_gt_preparation_timer;
+trigger lib66284E8B_gt_preparation_end;
+trigger lib66284E8B_gt_get_time_for_win;
+trigger lib66284E8B_gt_cycle;
+trigger lib66284E8B_gt_create_koth_timer_window;
+trigger lib66284E8B_gt_koth_winner;
+trigger lib66284E8B_gt_player_defeated;
+trigger lib66284E8B_gt_create_death_zone;
+trigger lib66284E8B_gt_add_buffs_to_new_units2;
+trigger lib66284E8B_gt_add_buffs_to_new_units;
+trigger lib66284E8B_gt_queen_created;
+trigger lib66284E8B_gt_queen_died;
+trigger lib66284E8B_gt_hatch_created;
+trigger lib66284E8B_gt_hatch_died;
+trigger lib66284E8B_gt_enter_death_zone;
+trigger lib66284E8B_gt_leave_death_zone;
+
+// Library Initialization
+void lib66284E8B_InitVariables ();
+

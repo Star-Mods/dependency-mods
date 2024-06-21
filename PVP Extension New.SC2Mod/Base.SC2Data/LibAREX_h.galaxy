@@ -1,0 +1,13 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: ALL RACES MAP EXTENSION
+//--------------------------------------------------------------------------------------------------
+// Trigger Declarations
+trigger libAREX_gt_GameAttributes;
+trigger libAREX_gt_CustomAITriggers;
+trigger libAREX_gt_UEDAIController;
+trigger libAREX_gt_DragonAIController;
+trigger libAREX_gt_TerranAIController;
+trigger libAREX_gt_DeprecatedGenetronV2AIController;
+
