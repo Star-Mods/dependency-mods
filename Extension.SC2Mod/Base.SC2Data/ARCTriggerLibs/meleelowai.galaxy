@@ -15,12 +15,12 @@ const int c_ldArmyRoundUp = 500; //FixedToInt(c_ldArmyStockScale/2.0);
 
 
 
-//void APLBasicEconomy (int player, int tier, int minWorkers) {}
-//void APLBasicExpansion (int player, int tier, int minerals, int gas) {}
-//void APLGeneralBuild (int player, int tier) {}
-//bool APLMacroExpand (int player) {return true;}
-//void APLAtEachTown (int player, int tier) {}
-//void APLTechUp (int player, int tier) {}
+//void UPLBasicEconomy (int player, int tier, int minWorkers) {}
+//void UPLBasicExpansion (int player, int tier, int minerals, int gas) {}
+//void UPLGeneralBuild (int player, int tier) {}
+//bool UPLMacroExpand (int player) {return true;}
+//void UPLAtEachTown (int player, int tier) {}
+//void UPLTechUp (int player, int tier) {}
 //
 //void DragonBasicEconomy (int player, int tier, int minWorkers) {}
 //void DragonBasicExpansion (int player, int tier, int minerals, int gas) {}

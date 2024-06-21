@@ -571,7 +571,7 @@ include "TriggerLibs/Keiron/Keiron"
 
 include "TriggerLibs/ARC/Dragon"
 include "TriggerLibs/ARC/UED"
-include "TriggerLibs/ARC/APL"
+include "TriggerLibs/ARC/UPL"
 include "TriggerLibs/ARC/Hybrid"
 
 include "TriggerLibs/Terran/Terran"
