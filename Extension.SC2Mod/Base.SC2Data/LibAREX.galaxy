@@ -32,7 +32,7 @@ bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
     string lv_aG_Resources;
     string lv_aG_Zombies;
     string lv_aG_Money;
-    string lv_aG_Bounty;
+    string lv_aG_ZombieBounty;
     string lv_aG_Mode;
     string lv_aG_Monobattle;
     string lv_aG_KOTH_DeathZone;
@@ -78,7 +78,7 @@ bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
     lv_aG_Resources = GameAttributeGameValue("3");
     lv_aG_Zombies = GameAttributeGameValue("4");
     lv_aG_Money = GameAttributeGameValue("5");
-    lv_aG_Bounty = GameAttributeGameValue("6");
+    lv_aG_ZombieBounty = GameAttributeGameValue("6");
     lv_aG_Mode = GameAttributeGameValue("7");
     lv_aG_Monobattle = GameAttributeGameValue("8");
     lv_aG_KOTH_DeathZone = GameAttributeGameValue("12");
@@ -143,7 +143,7 @@ bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
     }
     else {
     }
-    auto74B0C66F_val = lv_aG_Bounty;
+    auto74B0C66F_val = lv_aG_KillBounty;
     if (auto74B0C66F_val == "0001") {
         lv_kOTH_KillBounty = 10;
     }
@@ -166,9 +166,10 @@ bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
         lv_kOTH_KillBounty = 70;
     }
     else {
+        lv_kOTH_KillBounty = 0;
     }
     if ((lv_kOTH_KillBounty != 0)) {
-        libARMP_gf_Bountyinit(lv_kOTH_KillBounty);
+        libARMP_gf_Bountyinit((lv_kOTH_KillBounty / 100));
     }
 
     autoAD3B0E42_val = lv_aG_Mode;
@@ -176,7 +177,7 @@ bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
         libARMP_gf_InitializeMeleeGame();
     }
     else if (autoAD3B0E42_val == "0001") {
-        autoCE1E1E9C_val = lv_aG_Bounty;
+        autoCE1E1E9C_val = lv_aG_ZombieBounty;
         if (autoCE1E1E9C_val == "0004") {
             lv_zC_BountyMinerals = 0.0;
             lv_zC_BountyVespene = 0.0;

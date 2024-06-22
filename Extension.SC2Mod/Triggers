@@ -817,6 +817,7 @@
         <Element Type="FunctionCall" Id="74B0C66F">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="91C49196"/>
             <Parameter Type="Param" Library="AREX" Id="8723E80F"/>
+            <FunctionCall Type="FunctionCall" Library="AREX" Id="7F7807D9"/>
             <FunctionCall Type="FunctionCall" Library="AREX" Id="1E99DA98"/>
             <FunctionCall Type="FunctionCall" Library="AREX" Id="6F261651"/>
             <FunctionCall Type="FunctionCall" Library="AREX" Id="727B7320"/>
@@ -827,7 +828,22 @@
         </Element>
         <Element Type="Param" Id="8723E80F">
             <ParameterDef Type="ParamDef" Library="Ntve" Id="B4ACF12A"/>
-            <Variable Type="Variable" Library="AREX" Id="AE076446"/>
+            <Variable Type="Variable" Library="AREX" Id="205F2E0E"/>
+        </Element>
+        <Element Type="FunctionCall" Id="7F7807D9">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000136"/>
+            <SubFunctionType Type="SubFuncType" Library="Ntve" Id="3E7C4C40"/>
+            <Parameter Type="Param" Library="AREX" Id="E0505161"/>
+            <Parameter Type="Param" Library="AREX" Id="968903EA"/>
+        </Element>
+        <Element Type="Param" Id="E0505161">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000219"/>
+            <Variable Type="Variable" Library="AREX" Id="317C74C1"/>
+        </Element>
+        <Element Type="Param" Id="968903EA">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
+            <Value>0</Value>
+            <ValueType Type="int"/>
         </Element>
         <Element Type="FunctionCall" Id="1E99DA98">
             <FunctionDef Type="FunctionDef" Library="Ntve" Id="3A1227AB"/>
@@ -1030,6 +1046,25 @@
         </Element>
         <Element Type="Param" Id="BF1041E3">
             <ParameterDef Type="ParamDef" Library="ARMP" Id="741A42D5"/>
+            <FunctionCall Type="FunctionCall" Library="AREX" Id="16367EB5"/>
+        </Element>
+        <Element Type="FunctionCall" Id="16367EB5">
+            <FunctionDef Type="FunctionDef" Library="Ntve" Id="00000128"/>
+            <Parameter Type="Param" Library="AREX" Id="95BE5F98"/>
+            <Parameter Type="Param" Library="AREX" Id="9D906A73"/>
+            <Parameter Type="Param" Library="AREX" Id="9BE5C0BA"/>
+        </Element>
+        <Element Type="Param" Id="95BE5F98">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000206"/>
+            <Preset Type="PresetValue" Library="Ntve" Id="00000088"/>
+        </Element>
+        <Element Type="Param" Id="9D906A73">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000207"/>
+            <Value>100</Value>
+            <ValueType Type="int"/>
+        </Element>
+        <Element Type="Param" Id="9BE5C0BA">
+            <ParameterDef Type="ParamDef" Library="Ntve" Id="00000205"/>
             <Variable Type="Variable" Library="AREX" Id="317C74C1"/>
         </Element>
         <Element Type="FunctionCall" Id="BA57A0FE">
