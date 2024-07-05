@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Attributes>
+    <Attribute>
+        <Id Value="16"/>
+        <Type Value="Player"/>
+        <Name Value="Attribute001/Name"/>
+        <Availability Value="All"/>
+        <Visibility Value="All"/>
+        <Access Value="Self"/>
+        <Value>
+            <Id Value="1"/>
+            <Name Value="Attribute001/Value001/Name"/>
+            <Description Value="Attribute001/Value001/Desc"/>
+        </Value>
+        <Value>
+            <Id Value="2"/>
+            <Name Value="Attribute001/Value006/Name"/>
+            <Icon Value="Assets\Lobby\lobby-genetron.dds"/>
+        </Value>
+        <Value>
+            <Id Value="3"/>
+            <Name Value="Attribute001/Value007/Name"/>
+            <Icon Value="Assets\Lobby\lobby-xayid.dds"/>
+        </Value>
+        <Value>
+            <Id Value="4"/>
+            <Name Value="Attribute001/Value008/Name"/>
+            <Icon Value="Assets\Lobby\lobby-keiron.dds"/>
+        </Value>
+        <Value>
+            <Id Value="5"/>
+            <Name Value="Attribute001/Value009/Name"/>
+            <Icon Value="Assets\Lobby\lobby-ued.dds"/>
+        </Value>
+        <Value>
+            <Id Value="6"/>
+            <Name Value="Attribute001/Value010/Name"/>
+            <Icon Value="Assets\Lobby\lobby-dragons.dds"/>
+        </Value>
+        <Value>
+            <Id Value="7"/>
+            <Name Value="Attribute001/Value011/Name"/>
+            <Icon Value="Assets\Lobby\lobby-hybrid.dds"/>
+        </Value>
+        <Value>
+            <Id Value="8"/>
+            <Name Value="Attribute001/Value012/Name"/>
+            <Icon Value="Assets\Lobby\lobby-upl.dds"/>
+        </Value>
+        <Value>
+            <Id Value="9"/>
+            <Name Value="Attribute001/Value014/Name"/>
+            <Icon Value="Assets\Lobby\lobby-umojan.dds"/>
+        </Value>
+        <Value>
+            <Id Value="10"/>
+            <Name Value="Attribute001/Value013/Name"/>
+            <Icon Value="Assets\Lobby\lobby-synoid.dds"/>
+        </Value>
+        <Value>
+            <Id Value="11"/>
+            <Name Value="Attribute001/Value003/Name"/>
+            <Icon Value="Assets\Lobby\lobby-terran.dds"/>
+        </Value>
+        <Value>
+            <Id Value="12"/>
+            <Name Value="Attribute001/Value004/Name"/>
+            <Icon Value="Assets\Lobby\lobby-zerg.dds"/>
+        </Value>
+        <Value>
+            <Id Value="13"/>
+            <Name Value="Attribute001/Value005/Name"/>
+            <Icon Value="Assets\Lobby\lobby-protoss.dds"/>
+        </Value>
+        <Value>
+            <Id Value="14"/>
+            <Name Value="Attribute001/Value002/Name"/>
+            <Icon Value="assets\textures\decal_zerg_0001_01.dds"/>
+        </Value>
+        <Value>
+            <Id Value="15"/>
+            <Name Value="Attribute001/Value015/Name"/>
+            <Icon Value="assets\textures\decal_zerg_0056_01.dds"/>
+        </Value>
+        <Value>
+            <Id Value="16"/>
+            <Name Value="Attribute001/Value016/Name"/>
+            <Icon Value="assets\textures\decal_zerg_0053_01.dds"/>
+        </Value>
+        <Value>
+            <Id Value="17"/>
+            <Name Value="Attribute001/Value017/Name"/>
+            <Icon Value="Assets\Lobby\lobby-random.dds"/>
+        </Value>
+        <Default>
+            <Slot Id="0"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="1"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="2"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="3"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="4"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="5"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="6"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="7"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="8"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="9"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="10"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="11"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="12"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="13"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="14"/>
+            <Value Id="1"/>
+        </Default>
+        <Default>
+            <Slot Id="15"/>
+            <Value Id="1"/>
+        </Default>
+    </Attribute>
+    <DefaultVariants Value="1"/>
+</Attributes>

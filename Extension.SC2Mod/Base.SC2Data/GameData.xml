@@ -5,18 +5,18 @@
     <Catalog path="FixData/Terran.xml"/>
     <Catalog path="FixData/Zerg.xml"/>
 
-    <Catalog path="FixData/SCEvo/AbilData.xml"/>
-    <Catalog path="FixData/SCEvo/AccumulatorData.xml"/>
-    <Catalog path="FixData/SCEvo/ActorData.xml"/>
-    <Catalog path="FixData/SCEvo/BehaviorData.xml"/>
-    <Catalog path="FixData/SCEvo/EffectData.xml"/>
-    <Catalog path="FixData/SCEvo/ModelData.xml"/>
-    <Catalog path="FixData/SCEvo/RaceData.xml"/>
-    <Catalog path="FixData/SCEvo/RequirementData.xml"/>
-    <Catalog path="FixData/SCEvo/RequirementNodeData.xml"/>
-    <Catalog path="FixData/SCEvo/TurretData.xml"/>
-    <Catalog path="FixData/SCEvo/UnitData.xml"/>
-    <Catalog path="FixData/SCEvo/UpgradeData.xml"/>
-    <Catalog path="FixData/SCEvo/ValidatorData.xml"/>
-    <Catalog path="FixData/SCEvo/WeaponData.xml"/>
+<!--    <Catalog path="FixData/SCEvo/AbilData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/AccumulatorData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/ActorData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/BehaviorData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/EffectData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/ModelData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/RaceData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/RequirementData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/RequirementNodeData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/TurretData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/UnitData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/UpgradeData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/ValidatorData.xml"/>-->
+<!--    <Catalog path="FixData/SCEvo/WeaponData.xml"/>-->
 </Includes>

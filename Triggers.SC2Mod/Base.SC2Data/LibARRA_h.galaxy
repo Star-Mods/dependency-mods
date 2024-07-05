@@ -387,6 +387,7 @@ void libARRA_gf_UT_DL_DialogUpdate (int lp_pPlayerData, int lp_pPlayerShow);
 void libARRA_gf_UT_DL_AddHealingDamage (int lp_pIndex, int lp_pDamageHeal, int lp_pPlayer, fixed lp_pAdd_Amount);
 int libARRA_gf_UT_DL_SumHealingDamage (int lp_pIndex, int lp_pDamageHeal, int lp_pPlayer);
 void libARRA_gf_UT_DL_LogClear (int lp_pPlayer);
+void libARRA_gf_SetCommandsLevelAllowedForPlayer (int lp_player, int lp_level);
 bool libARRA_gf_UT_DevCommandsActive (int lp_pDevCommandType, int lp_pPlayer);
 void libARRA_gf_UT_Cheat ();
 int libARRA_gf_HookUpDialogItemandshowforplayers (string lp_name, int lp_type, int lp_parent, playergroup lp_players);

@@ -95,6 +95,28 @@ bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
         return true;
     }
 
+    if ((PlayerGroupCount(libARRA_gf_HumanPlayers()) == 1)) {
+        libNtve_gf_CreateUnitsWithDefaultFacing(1, "Liberator", 0, 1, PlayerStartLocation(1));
+        libARRA_gv_uT_DevCommands[1] = libARRA_ge_UT_DevCommandTypes_Gamealtering;
+    }
+    if ((GameIsTestMap(false) == true)) {
+        libARRA_gf_LOGString("TEST MODE ON");
+        lv_aG_Supplies = "0002";
+        lv_aG_Resources = "0001";
+        lv_aG_Money = "0002";
+        lv_aG_Zombies = "0001";
+        lv_aG_ZombieBounty = "0004";
+        lv_aG_Mode = "0002";
+        lv_aG_Monobattle = "0001";
+        lv_aG_KOTH_ControlUnits = "0001";
+        lv_aG_KOTH_DeathZone = "0002";
+        lv_aG_KOTH_PreparationTime = "0001";
+        lv_aG_KOTH_Vision = "0001";
+        lv_aG_KOTH_WinTimer = "0001";
+        lv_aG_KillBounty = "0008";
+        lv_aG_BloodLust = "0001";
+    }
+
     lv_playerFactionGameAtrribute = "16";
     libARMP_gf_SetAvailableFactions(lv_availableFactions);
     auto246D2D84_g = libARMP_gf_ARCGetActivePlayers();
@@ -322,51 +344,6 @@ bool libAREX_gt_GameAttributes_Func (bool testConds, bool runActions) {
 void libAREX_gt_GameAttributes_Init () {
     libAREX_gt_GameAttributes = TriggerCreate("libAREX_gt_GameAttributes_Func");
     TriggerAddEventMapInit(libAREX_gt_GameAttributes);
-}
-
-//--------------------------------------------------------------------------------------------------
-// Trigger: Custom AI Triggers
-//--------------------------------------------------------------------------------------------------
-bool libAREX_gt_CustomAITriggers_Func (bool testConds, bool runActions) {
-    // Automatic Variable Declarations
-    playergroup autoCFBF69D6_g;
-    int autoCFBF69D6_var;
-    string auto6760E9AA_val;
-
-    // Actions
-    if (!runActions) {
-        return true;
-    }
-
-    autoCFBF69D6_g = PlayerGroupAll();
-    autoCFBF69D6_var = -1;
-    while (true) {
-        autoCFBF69D6_var = PlayerGroupNextPlayer(autoCFBF69D6_g, autoCFBF69D6_var);
-        if (autoCFBF69D6_var < 0) { break; }
-        if ((PlayerType(autoCFBF69D6_var) != c_playerTypeComputer)) {
-            continue;
-        }
-
-        libVSAI_gf_RunViscerousAI(autoCFBF69D6_var);
-        auto6760E9AA_val = PlayerRace(autoCFBF69D6_var);
-        if (auto6760E9AA_val == "Terr") {
-            TriggerExecute(libAREX_gt_TerranAIController, true, false);
-        }
-        else if (auto6760E9AA_val == "UED") {
-            TriggerExecute(libAREX_gt_UEDAIController, true, false);
-        }
-        else if (auto6760E9AA_val == "Dragon") {
-            TriggerExecute(libAREX_gt_DragonAIController, true, false);
-        }
-        else {
-        }
-    }
-    return true;
-}
-
-//--------------------------------------------------------------------------------------------------
-void libAREX_gt_CustomAITriggers_Init () {
-    libAREX_gt_CustomAITriggers = TriggerCreate("libAREX_gt_CustomAITriggers_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -615,7 +592,6 @@ void libAREX_gt_DeprecatedGenetronV2AIController_Init () {
 
 void libAREX_InitTriggers () {
     libAREX_gt_GameAttributes_Init();
-    libAREX_gt_CustomAITriggers_Init();
     libAREX_gt_UEDAIController_Init();
     libAREX_gt_DragonAIController_Init();
     libAREX_gt_TerranAIController_Init();

@@ -1,0 +1,23 @@
+﻿Attribute001/Name=Faction (All)
+Attribute001/Value001/Desc=Returns the race selected in the default selector.
+Attribute001/Value001/Name=Default
+Attribute001/Value002/Name=BW Terran
+Attribute001/Value003/Name=Terran
+Attribute001/Value004/Name=Zerg
+Attribute001/Value005/Name=Protoss
+Attribute001/Value006/Name=Genetron
+Attribute001/Value007/Name=Xayid
+Attribute001/Value008/Name=Keiron
+Attribute001/Value009/Name=UED
+Attribute001/Value010/Name=Dragons
+Attribute001/Value011/Name=Hybrids
+Attribute001/Value012/Name=UPL
+Attribute001/Value013/Name=Synoid
+Attribute001/Value014/Name=Umojan
+Attribute001/Value015/Name=BW Zerg
+Attribute001/Value016/Name=BW Protoss
+Attribute001/Value017/Name=Random
+DocInfo/DescLong=All Races Mod:<n/>- New Races: Keiron,Genetron,Xayid/UED/Hybrids/Dragons/UPL<n/>- Monobattle/ZombieBounty game modes<n/>- Additional game options <n/>All Races Mod 2: <n/>- New Races: Synoid/Umojan, BroodWar Races<n/>Discord: https://discord.gg/2RbcjRkddw<n/>COOP mod with custom races: "ALL RACES COOP"
+DocInfo/Name=ALL RACES PVP 2
+LoadingScreen/Help1=<s val="CenterJustified">There is also <s val="AICoopTitle"><c val="FFFFFF">ALL RACES COOP</c></s> for 1-3 Players with commanders and all dustom races. Join our discord server (link in the mod info)
+LoadingScreen/HelpIntro00=<s val="CenterJustified">You can also find commanders CO-OP missions with all custom races <s val="BoardTitle">ALL RACES COOP</s>

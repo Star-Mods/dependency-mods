@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocInfo>
+    <Flags>
+        <Value>ExtensionMod</Value>
+    </Flags>
+    <Icon>
+        <Value>ScionLogoSmall.png</Value>
+    </Icon>
+    <Dependencies>
+        <Value>bnet:[AR2] Scion/0.0/325360,file:Mods\all-races-mods\factions\Scion.SC2Mod</Value>
+        <Value>bnet:[ARM] Dragons (Hammer)/0.0/449944,file:Mods\all-races-mods\factions\Dragons.SC2Mod</Value>
+        <Value>bnet:[AR2] Hybrids/0.0/231107,file:Mods\all-races-mods\factions\Hybrids.SC2Mod</Value>
+        <Value>bnet:[AR2] UED/0.0/325362,file:Mods\all-races-mods\factions\UED.SC2Mod</Value>
+        <Value>bnet:[AR2] UPL/0.0/325366,file:Mods\all-races-mods\factions\UPL.SC2Mod</Value>
+        <Value>bnet:[AR2] Umojan/0.0/455370,file:Mods\all-races-mods\factions\Umojan.SC2Mod</Value>
+        <Value>bnet:[AR2] Synoid/0.0/231109,file:Mods\all-races-mods\factions\Synoid.SC2Mod</Value>
+        <Value>bnet:[AR2] BroodWar/0.0/325457,file:Mods\all-races-mods\factions\BroodWar.SC2Mod</Value>
+    </Dependencies>
+</DocInfo>

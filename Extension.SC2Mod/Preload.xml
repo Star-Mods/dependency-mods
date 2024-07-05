@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Preload>
 <Actor id="SYSTEM_ActorConfig"/>
+<Unit id="Liberator"/>
 <Unit id="Berserker"/>
 <Unit id="Flamespitter"/>
 <Unit id="DragonHunter"/>

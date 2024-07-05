@@ -186,7 +186,7 @@
   <EnableRewardSkins value="1"/>
   <EnableRewardVoicePacks value="1"/>
   <EnableRewardConsoleSkins value="1"/>
-<!--  <TriggerLibs Id="VdMp" IncludePath="TriggerLibs/VoidMultiLib"/>-->
+<!--  <TriggerLibsScionOld Id="VdMp" IncludePath="TriggerLibsScionOld/VoidMultiLib"/>-->
 </CGame>
 
 </Catalog>
